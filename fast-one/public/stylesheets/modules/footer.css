@@ -1,20 +1,14 @@
 /*********************************************************************
 /*  =footer
 *********************************************************************/
-
-$white:#ffffff;
-$boston-blue: #3c81ad;
-
 .footer {
   padding: 2%;
-  background-color:#659ec2;
-  color:#fff;
-  a {
+  background-color: #659ec2;
+  color: #fff; }
+  .footer a {
     text-decoration: none;
-    color: $white;
-  }
-  a:hover {
-    color:$boston-blue;
-  }
+    color: #ffffff; }
+  .footer a:hover {
+    color: #3c81ad; }
 
-}
+/*# sourceMappingURL=footer.css.map */

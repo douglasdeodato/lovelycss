@@ -5,6 +5,9 @@
 // Load helpers
 @import "helpers/clearfix";
 
+// Load vendor
+@import "vendor/normalize";
+
 // Load modules files
 @import "modules/header";
 @import "modules/menu";
@@ -17,4 +20,12 @@
 // Load core
 @import "core/reset";
 @import "core/typography";
-@import "core/media-query";
+@import "core/base";
+@import "core/layout";
+
+
+
+//Load Core Media Queries
+@import "core/media-queries/767px";
+@import "core/media-queries/840px";
+@import "core/media-queries/960px";

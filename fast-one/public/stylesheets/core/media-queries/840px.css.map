@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,oCAAsC;EACpC,cAAe;IACb,MAAM,EAAE,cAAc",
+"sources": ["../../../../scss/core/media-queries/840px.scss"],
+"names": [],
+"file": "840px.css"
+}
