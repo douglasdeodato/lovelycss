@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/*********************************************************************
+*  =Layout
+*********************************************************************/
+#container {
+  width: 90%;
+  /* 1000px */
+  max-width: 1400px;
+  margin: 0 auto; }
+
+.main-content {
+  float: left;
+  margin-right: 2%;
+  padding: 2%; }
+
+.alignleft {
+  float: left;
+  width: 50%; }
+
+.side-content {
+  float: right;
+  width: 40%;
+  /* 400px ÷ 1000px */
+  margin: 20px 0 0 0; }
+
+/*# sourceMappingURL=layout.css.map */

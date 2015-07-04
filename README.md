@@ -37,5 +37,5 @@ lovelycss/
 
 **Douglas Deodato**
 
-- <https://douglasdeodato.com>
+- <http://douglasdeodato.com>
 - <https://github.com/douglasdeodato>

@@ -1,0 +1,48 @@
+// Load all modules
+
+// helpers colours frist
+@import "helpers/colors";
+
+//mixins come first too
+@import "helpers/mixins";
+
+
+@import "core/reset";
+
+
+// Vendor CSS
+
+@import "vendor/bootstrap-theme.min";
+@import "vendor/bootstrap.min";
+
+// core CSS
+@import "core/base";
+@import "core/typography";
+
+// modules CSS
+@import "modules/header";
+@import "modules/menu";
+@import "modules/banner";
+@import "modules/content";
+@import "modules/footer";
+
+// helpers
+@import "helpers/clearfix";
+@import "helpers/overwrite";
+
+// pages
+@import "pages/index";
+
+
+//Load Core Media Queries
+@import "core/media-queries/1920px";
+@import "core/media-queries/1280px";
+@import "core/media-queries/1024px";
+@import "core/media-queries/960px";
+@import "core/media-queries/840px";
+@import "core/media-queries/767px";
+@import "core/media-queries/667px";
+@import "core/media-queries/480px";
+@import "core/media-queries/320px";
+
+

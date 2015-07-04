@@ -1,0 +1,15 @@
+/*********************************************************************
+/*  =menu
+*********************************************************************/
+.menu {
+  background-color: #659ec2;
+  color: #ffffff; }
+  .menu a {
+    float: left;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 10px; }
+  .menu a:hover {
+    background-color: #3c81ad; }
+
+/*# sourceMappingURL=menu.css.map */
