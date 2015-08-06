@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/douglasdeodato/lovelycss/issues"
   },
-  "homepage": "https://github.com/douglasdeodato/lovelycss"
+  "homepage": "https://github.com/douglasdeodato/lovelycss",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
 }
