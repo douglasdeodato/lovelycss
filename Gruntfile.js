@@ -10,6 +10,7 @@
 			'grunt-contrib-jshint'
 			,'grunt-contrib-watch'
 			,'grunt-contrib-concat'
+			,'grunt-contrib-uglify'
 	];
 
 		//concat ===============================
@@ -26,6 +27,14 @@
 			}
 		};
 
+
+		//uglify ===============================
+		config.uglify = {dist: {
+			options: {sourceMap:"public/myapp.production.js.map"}
+			,files: {
+				"public/myapp.production.js": ["public/myapp.development.js"]
+			}
+		}}
 
 
 	config.jshint = jshint ={};
@@ -54,6 +63,7 @@
 	//Register custom tasks ===============================
 	grunt.registerTask('default',['dev']);
 	grunt.registerTask('dev',['jshint:dev', 'concat:dev']);
+	grunt.registerTask('dist',['jshint:dist', 'concat:dev', 'uglify']);
 
 
 	//General setup ===============================
