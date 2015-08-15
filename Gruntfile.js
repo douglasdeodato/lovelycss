@@ -9,7 +9,24 @@
 	var tasks = [
 			'grunt-contrib-jshint'
 			,'grunt-contrib-watch'
+			,'grunt-contrib-concat'
 	];
+
+		//concat ===============================
+
+		var concat
+		config.concat = concat = {};
+
+		concat.dev = {
+			files: {
+				"public/myapp.development.js": [
+					"with-bootstrap/public/js/vendor"
+					,"with-bootstrap/public/js/**/*.js"
+				]
+			}
+		};
+
+
 
 	config.jshint = jshint ={};
 
@@ -36,7 +53,7 @@
 
 	//Register custom tasks ===============================
 	grunt.registerTask('default',['dev']);
-	grunt.registerTask('dev',['jshint:dev']);
+	grunt.registerTask('dev',['jshint:dev', 'concat:dev']);
 
 
 	//General setup ===============================
