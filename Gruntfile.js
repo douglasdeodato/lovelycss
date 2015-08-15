@@ -57,6 +57,10 @@ module.exports = function  (grunt) {
 	};
 
 
+	//Register custom tasks ===============================
+	grunt.registerTask('default',['jshint:dev']);
+
+
 	//General setup ===============================
 	grunt.initConfig(config);
 	grunt.loadNpmTasks('grunt-contrib-jshint');
