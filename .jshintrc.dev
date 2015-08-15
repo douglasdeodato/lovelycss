@@ -1,0 +1,6 @@
+{
+		"strict":true,
+		"laxcomma":true,
+		"sub":true,
+		"debug":true
+}

@@ -47,8 +47,13 @@ module.exports = function  (grunt) {
 
 
 	jshint.dist = {
-		options: {jshintrc: ".jshintrc"},
-		files: {all: ["with-bootstrap/public/js/main.js","with-bootstrap/public/js/test.js"]}
+	options: {jshintrc: ".jshintrc"},
+	files: {all: ["with-bootstrap/public/js/main.js","with-bootstrap/public/js/test.js"]}
+	};
+
+	jshint.dev = {
+	options: {jshintrc: ".jshintrc.dev"},
+	files: {all: ["with-bootstrap/public/js/main.js","with-bootstrap/public/js/test.js"]}
 	};
 
 
