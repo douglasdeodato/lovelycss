@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,oCAAsC;EACpC,cAAe;IACb,MAAM,EAAE,cAAc",
-"sources": ["../../../../scss/core/media-queries/960px.scss"],
-"names": [],
-"file": "960px.css"
-}
