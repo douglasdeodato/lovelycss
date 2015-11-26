@@ -23,6 +23,9 @@
     "bootstrap": "*",
     "bourbon": "*",
     "components-font-awesome": "*",
-    "reset-css": "*"
+    "reset-css": "*",
+    "normalize-css": "*",
+    "modernize": "~0.1.0",
+    "modernizr": "components-modernizr#2.8.3"
   }
 }
