@@ -1,0 +1,19 @@
+/*********************************************************************
+*   
+*
+*   Author: @douglasdeodato
+*   Sitw: lovelycss.com
+*   Date : 26/11/2015
+*   Version: bower.json or package.json   
+*********************************************************************/
+
+
+/* example: sprite menu */
+
+.home-enable {
+  @include sprite($menu-icon-home-enable);
+}
+
+.home-disable {
+  @include sprite($menu-icon-home-disable);
+}

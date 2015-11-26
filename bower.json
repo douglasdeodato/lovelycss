@@ -1,0 +1,28 @@
+{
+  "name": "lovelycss",
+  "version": "1.0.0",
+  "authors": [
+    "Douglas Deodato <douglasdeodato@gmail.com>"
+  ],
+  "description": "lovelyss It is an Object Oriented CSS (OOCSS), clean and organised CSS framework to help developers starting a web project from scratch.",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "homepage": "http://lovelycss.com/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "*",
+    "angular-route": "*",
+    "bootstrap": "*",
+    "bourbon": "*",
+    "components-font-awesome": "*",
+    "reset-css": "*"
+  }
+}

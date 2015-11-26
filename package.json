@@ -23,6 +23,8 @@
     "grunt-contrib-sass": "*",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "*",
-    "grunt-contrib-concat": "*"
+    "grunt-contrib-concat": "*",
+    "grunt-spritesmith": "*",
+    "grunt-contrib-imagemin": "*"
   }
 }

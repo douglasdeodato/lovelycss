@@ -1,0 +1,44 @@
+/*********************************************************************
+*
+* 	Author: @douglasdeodato
+* 	Sitw: lovelycss.com
+* 	Date : 26/11/2015
+*   Version: bower.json or package.json   
+*********************************************************************/
+
+// Load all modules
+
+// helpers colours frist
+@import "helpers/helpers-dir";
+//@import "helpers/bourbon-helpers-dir";
+@import "../bower_components/reset-css/reset";
+
+// Vendor CSS
+@import "../bower_components/bootstrap/dist/css/bootstrap-theme.min";
+@import "../bower_components/bootstrap/dist/css/bootstrap.min";
+@import "../bower_components/components-font-awesome/scss/font-awesome";
+
+// core CSS
+@import"core/core-dir";
+
+// modules CSS
+@import"modules/modules-dir";
+
+// modules CSS
+//@import"vendor/simple-sidebar";
+
+//pages
+@import "pages/pages-dir";
+
+//overwrite
+@import "helpers/overwrite-dir";
+
+// media queries
+@import"core/media-queries/media-queries-dir";
+
+
+
+
+
+
+

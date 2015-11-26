@@ -11,59 +11,111 @@
 			,'grunt-contrib-watch'
 			,'grunt-contrib-concat'
 			,'grunt-contrib-uglify'
+			,'grunt-contrib-sass'
+			,'grunt-contrib-imagemin'
+			,'grunt-spritesmith'
 	];
 
-		//concat ===============================
+				//Concat ===============================
 
-		var concat
-		config.concat = concat = {};
+				var concat
+				config.concat = concat = {};
 
-		concat.dev = {
-			files: {
-				"public/myapp.development.js": [
-					"with-bootstrap/public/js/vendor"
-					,"with-bootstrap/public/js/**/*.js"
-				]
-			}
-		};
-
-
-		//uglify ===============================
-		config.uglify = {dist: {
-			options: {sourceMap:"public/myapp.production.js.map"}
-			,files: {
-				"public/myapp.production.js": ["public/myapp.development.js"]
-			}
-		}}
+				concat.dev = {
+					files: {
+						"public/myapp.development.js": [
+							"with-bootstrap/public/js/vendor"
+							,"with-bootstrap/public/js/**/*.js"
+						]
+					}
+				};
 
 
-	config.jshint = jshint ={};
+				//Uglify ===============================
+				config.uglify = {dist: {
+					options: {sourceMap:"public/myapp.production.js.map"}
+					,files: {
+						"public/myapp.production.js": ["public/myapp.development.js"]
+					}
+				}}
 
 
-	jshint.dist = {
-	options: {jshintrc: ".jshintrc"},
-	files: {all: ["with-bootstrap/public/js/main.js","with-bootstrap/public/js/test.js"]}
-	};
+	//config.jshint = jshint ={};
+	//jshint.dist = {
+	//options: {jshintrc: ".jshintrc"},
+	//files: {all: ["with-bootstrap/public/js/main.js","with-bootstrap/public/js/test.js"]}
+	//};
 
-	//Watch ===============================
+				//Watch ===============================
 
-	config.watch = {
-		 scripts: {
-		 	files: ["with-bootstrap/public/js/**/*.js"]
-		 	,tasks: ["dev"]
-		 }
-	}
+				config.watch = {
+					 scripts: {
+					 	files: ["with-bootstrap/public/js/**/*.js"]
+					 	,tasks: ["dev"]
+					 }
+				}
 
-	jshint.dev = {
-	options: {jshintrc: ".jshintrc.dev"},
-	files: {all: ["with-bootstrap/public/js/main.js","with-bootstrap/public/js/test.js"]}
-	};
+	//jshint.dev = {
+	//options: {jshintrc: ".jshintrc.dev"},
+	//files: {all: ["with-bootstrap/public/js/main.js","with-bootstrap/public/js/test.js"]}
+	//};
+
+				//Sass ===============================
+				var sass;
+				config.sass = sass = {};
+
+					//production
+						sass.dist = {
+							options: { style: "compressed"}
+							, files: {
+								"public/stylesheets/demo-site.dist.css" : "sass/main.scss"
+							}
+						};
+
+					//development env.
+						sass.dev = {
+						options: { style: "expanded", lineNumber: true}
+						, files: {
+							"public/stylesheets/demo-site.development.css" : "sass/main.scss"
+						}
+					};
+
+
+				//Image min ===============================
+				var imagemin;
+				config.imagemin = imagemin = {};
+
+					imagemin.dist = {
+								  options: {
+						          optimizationLevel: 5,
+						          progressive: true,
+						      },
+						
+					        files: [{
+					            expand: true,
+					            cwd: 'public/images/',
+					            src: ['**/*.{png,jpg,gif}'],
+					            dest: 'public/images/min'
+					        }]
+					 };	
+
+				//Sprite ===============================
+				var sprite;
+				config.sprite = sprite = {};
+				
+				 
+				  sprite.dist ={
+				        src: 'public/images/min/*.{png,jpg,gif}',
+						dest: 'public/images/sprite/spritesheet.png',
+						destCss: 'sass/helpers/_sprite.scss'
+				    
+				  };		
 
 
 	//Register custom tasks ===============================
 	grunt.registerTask('default',['dev']);
-	grunt.registerTask('dev',['jshint:dev', 'concat:dev']);
-	grunt.registerTask('dist',['jshint:dist', 'concat:dev', 'uglify']);
+	grunt.registerTask('dev', ['concat:dev','sass:dev']);
+	grunt.registerTask('dist',['htmlmin','imagemin','sprite','concat:dev', 'uglify' , 'sass:dist']);
 
 
 	//General setup ===============================
