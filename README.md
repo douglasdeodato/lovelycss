@@ -12,6 +12,7 @@ Download Now http://lovelycss.com
 - [Dependencies](#dependencies)
 - [Installing](#installing)
 - [Grunt](#grunt)
+- [Grunt Sass](#gruntsass)
 
 
 ## About
@@ -29,13 +30,19 @@ bower
 Before you install lovelycss check if you have all dependencies above, once you have run:
 
 bower install
-npm intall
+npm install
 
 now you have a fresh and complete web project to start from scratch 
 
 ## Grunt
 we decided use grunt for organize and help us in repetitive tasks like minification, compilation, unit testing, linting, etc.
 
+
+## Grunt Sass
+we have 2 css files compiled by grunt sass:
+
+lovelycss.development.css  for development so you can see the line and the name of file for debug
+lovelycss.dist.css  for distribution when you finish your App.
 
 
 ## Bugs and feature requests

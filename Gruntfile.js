@@ -68,7 +68,7 @@
 						sass.dist = {
 							options: { style: "compressed"}
 							, files: {
-								"public/stylesheets/demo-site.dist.css" : "sass/main.scss"
+								"public/stylesheets/lovelycss.dist.css" : "sass/main.scss"
 							}
 						};
 
@@ -76,7 +76,7 @@
 						sass.dev = {
 						options: { style: "expanded", lineNumber: true}
 						, files: {
-							"public/stylesheets/demo-site.development.css" : "sass/main.scss"
+							"public/stylesheets/lovelycss.development.css" : "sass/main.scss"
 						}
 					};
 
