@@ -20,11 +20,16 @@ Download Now http://lovelycss.com
 
 
 ## Dependencies
-Ruby 
+Ruby https://www.ruby-lang.org/
+
 sass http://sass-lang.com/
+
 grunt http://gruntjs.com/
-node
-bower
+
+node https://nodejs.org/en/
+
+bower http://bower.io/
+
 
 ## Installing
 Before you install lovelycss check if you have all dependencies above, once you have run:
@@ -41,29 +46,29 @@ we decided use grunt for organize and help us in repetitive tasks like minificat
 ## Grunt Sass
 we have 2 css files compiled by grunt sass:
 
-lovelycss.development.css  for development so you can see the line and the name of file for debug
+lovelycss.development.css  for development so you can see the line and the name of file for debug.
+
 lovelycss.dist.css  for distribution when you finish your App.
 
 
 ## Bugs and feature requests
-### CSS Structure
+### SASS Structure
 
 ```
 lovelycss/
 ├── scss/
 │   ├── core/
 │   ├── helpers/
-│   ├── module/
+│   ├── modules/
 │   ├── pages/
 │   ├── vendor/
-├── public/
-│   ├── stylesheets/
-│   └── images/
-└── fonts/
-    ├── cabin/
-    ├── calligraffiti/
-    └── enriqueta/
+└── public/
+    ├── stylesheets/
+    ├── images/
+    └── fonts/
 ```
+
+for more click here:
 
 ## Creator
 
