@@ -13,6 +13,7 @@ Download Now http://lovelycss.com
 - [Installing](#installing)
 - [Grunt](#grunt)
 - [Grunt Sass](#gruntsass)
+- [lovelycss Structure](#lovelycss structure)
 
 
 ## About
@@ -35,6 +36,7 @@ bower http://bower.io/
 Before you install lovelycss check if you have all dependencies above, once you have run:
 
 bower install
+
 npm install
 
 now you have a fresh and complete web project to start from scratch 
@@ -55,6 +57,20 @@ lovelycss.dist.css  for distribution when you finish your App.
 ### SASS Structure
 
 ```
+├── scss/
+│   ├── core/
+│   ├── helpers/
+│   ├── modules/
+│   ├── pages/
+│   ├── vendor/
+```
+
+for more click here:
+
+
+### lovelycss Structure
+
+```
 lovelycss/
 ├── scss/
 │   ├── core/
@@ -67,8 +83,6 @@ lovelycss/
     ├── images/
     └── fonts/
 ```
-
-for more click here:
 
 ## Creator
 
