@@ -13,6 +13,7 @@ Download Now http://lovelycss.com
 - [Installing](#installing)
 - [Grunt](#grunt)
 - [Grunt Sass](#gruntsass)
+- [For Designers](#fordesigners)
 - [lovelycss Structure](#lovelycss structure)
 
 
@@ -51,6 +52,13 @@ we have 2 css files compiled by grunt sass:
 lovelycss.development.css  for development so you can see the line and the name of file for debug.
 
 lovelycss.dist.css  for distribution when you finish your App.
+
+
+## For Designers:
+
+Read more Here:
+
+
 
 
 ## Bugs and feature requests
