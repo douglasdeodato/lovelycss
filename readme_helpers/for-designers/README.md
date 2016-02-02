@@ -41,9 +41,9 @@ Now you have all dependecies to run a modern and great web system from scratch .
 ## Installing lovely-css
 Before you install lovelycss check if you have all dependencies above, enter in the folder lovelycss and run that commands bellow:
 
-** bower install **
+**bower install**
 
-** npm install **
+**npm install**
 
 that is it now you have a fresh and complete web project to start from scratch 
 
@@ -54,7 +54,7 @@ we are using sass for better performance and organization of css , you don't nee
 
 that is the command:
 
-** grunt sass **
+**grunt sass**
 
 after run this command all of your sass files will be compiled in a just css file:
 ```html
