@@ -5,8 +5,6 @@
 - [SASS Structure](#structure)
 - [SASS Summary](#sasssummary)
 
-
-
 ## For Designers:
 
 ## Step 1:
@@ -40,7 +38,7 @@ Now you have all dependecies to run a modern and great web system from scratch .
 
 ## Step 3:
 
-## Installing
+## Installing lovely-css
 Before you install lovelycss check if you have all dependencies above, once you have run:
 
 enter in the folder lovelycss and run that commands bellow:
@@ -54,10 +52,16 @@ that is it now you have a fresh and complete web project to start from scratch
 
 ## All your scss files will be in : sass folder
 
-we are using sass for better performance and organization of css , you don't need to worry about compiled this , you can just use a simple command to compress your sass files in a just css file:
+we are using sass for better performance and organization of css , you don't need to worry about compile this , you can just use a simple command to compress your sass files in a just css file:  
 
-that will be your compiled file:
+that is the command:
+grunt sass
+
+after run this command all of your sass files will be compiled in a just css file:
+```html
 <link rel="stylesheet" href="public/stylesheets/lovelycss.dist.css">
+```
+
 
 That file will be in: public/stylesheets
 
