@@ -56,9 +56,7 @@ lovelycss.dist.css  for distribution when you finish your App.
 
 ## For Designers:
 
-Read more Here:
-
-
+- [Read more Here](https://github.com/douglasdeodato/lovelycss/blob/master/readme_helpers/for-designers/README.md)
 
 
 ## Bugs and feature requests

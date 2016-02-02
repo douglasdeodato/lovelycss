@@ -1,1 +1,1 @@
-- [For Designers](https://github.com/username/repo/blob/branch/docs/more_words.md)
+- [For Designers](https://github.com/douglasdeodato/lovelycss/blob/master/readme_helpers/for-designers/README.md)
