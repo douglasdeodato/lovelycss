@@ -47,20 +47,12 @@
 	//};
 
 				//Watch ===============================
-
 				config.watch = {
 					 scripts: {
-					 	files: ["with-bootstrap/public/js/**/*.js"]
+					 	files: ["lib/**/*.js", "sass/**/*.scss"]
 					 	,tasks: ["dev"]
-					 },
-
-					 css: {
-				        files: ['sass/**/*.scss'],
-				        tasks: ['sass'],
-				        options: {
-				                spawn: false
-				            }
-        				} 
+					 	//,tasks: ["dev",'sass:dist']
+					 }
 				}
 
 	//jshint.dev = {
