@@ -53,9 +53,9 @@
 					 	files: ["with-bootstrap/public/js/**/*.js"]
 					 	,tasks: ["dev"]
 					 },
-					 
+
 					 css: {
-				        files: ['sass/*.scss'],
+				        files: ['sass/**/*.scss'],
 				        tasks: ['sass'],
 				        options: {
 				                spawn: false
