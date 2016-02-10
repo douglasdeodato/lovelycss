@@ -8,6 +8,7 @@ Download Now http://lovelycss.com
 ## Summary 
 
 - [About](#about)
+- [Why Use?](#whyuse)
 - [Creator](#creator)
 - [Dependencies](#dependencies)
 - [Installing](#installing)
@@ -18,6 +19,23 @@ Download Now http://lovelycss.com
 
 
 ## About
+
+## Why Use?
+
+We are trying make developers and designers life easy, lovelycss brings all you need for start your project from scratch and with everything you need.
+
+on lovelycss you gonna be able to:
+
+minimize your css quick
+compress and organize your sass files
+watch what is going on in your project with Grunt Watch.
+create a sprite with your all images just runing a command line
+minimize your images with i just simple command line.
+concat your css and js files easyly
+
+get the latest version of angular, boostrap, font awesome, reset css, normalize and more with just a command line.
+
+
 ## Documentation
 
 
