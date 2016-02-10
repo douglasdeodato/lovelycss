@@ -4,6 +4,7 @@
 - [Step 3](#step3)
 - [SASS Structure](#structure)
 - [SASS Summary](#sasssummary)
+- [Sprite](https://github.com/douglasdeodato/lovelycss/blob/master/readme_helpers/for-designers/SPRITE.md)
 
 ## For Designers:
 
