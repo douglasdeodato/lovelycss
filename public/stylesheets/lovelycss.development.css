@@ -3560,6 +3560,29 @@ h4 {
 *   Version: bower.json or package.json   
 *********************************************************************/
 /*********************************************************************
+* 	Media Query » screen equal or less than 1024px 
+*
+* 	Author: @douglasdeodato
+* 	Sitw: lovelycss.com
+* 	Date : 26/11/2015
+*   Version: bower.json or package.json   
+*********************************************************************/
+/*********************************************************************
+* 	Media Query » screen equal or less than 1024px 
+*
+* 	Author: @douglasdeodato
+* 	Sitw: lovelycss.com
+* 	Date : 26/11/2015
+*   Version: bower.json or package.json   
+*********************************************************************/
+@media screen and (max-width: 320px) {
+  /* line 13, ../../sass/core/media-queries/_320px.scss */
+  .deodato {
+    height: 100px;
+  }
+}
+/*/mediaquery*/
+/*********************************************************************
 *   
 *
 *   Author: @douglasdeodato
@@ -3663,24 +3686,12 @@ h4 {
 * 	Date : 26/11/2015
 *   Version: bower.json or package.json   
 *********************************************************************/
-/*1366px*/
-/*********************************************************************
-* 	Media Query » screen equal or less than 1024px 
-*
-* 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
-* 	Date : 26/11/2015
-*   Version: bower.json or package.json   
-*********************************************************************/
+@media screen and (max-width: 320px) {
+  /* line 13, ../../sass/core/media-queries/_320px.scss */
+  .deodato {
+    height: 100px;
+  }
+}
 /*/mediaquery*/
-/*********************************************************************
-* 	Media Query » screen equal or less than 1024px 
-*
-* 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
-* 	Date : 26/11/2015
-*   Version: bower.json or package.json   
-*********************************************************************/
-/*1024px*/
 
 /*# sourceMappingURL=lovelycss.development.css.map */
