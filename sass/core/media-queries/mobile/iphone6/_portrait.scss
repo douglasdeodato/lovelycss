@@ -1,19 +1,25 @@
 /*********************************************************************
-* 	Media Query » screen equal or less than 1024px 
+* 	Media Query » 
 *
 * 	Author: @douglasdeodato
 * 	Sitw: lovelycss.com
-* 	Date : 26/11/2015
+* 	Date : 15/02/2016
 *   Version: bower.json or package.json   
 *********************************************************************/
 
-//@import "1366px";
-//@import "1280px";
-//@import "1024px";
 
-@import "320px";
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) 
+{ 
+
+	/* STYLES GO HERE */
 
 
-//mobile and tablets
-@import "mobile/mobile-dir";
-@import "tablets/tablets-dir";
+}
+
+
+
+
+

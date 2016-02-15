@@ -1,19 +1,17 @@
 /*********************************************************************
-* 	Media Query » screen equal or less than 1024px 
+* 	Media Query 
 *
 * 	Author: @douglasdeodato
 * 	Sitw: lovelycss.com
-* 	Date : 26/11/2015
+* 	Date : 15/02/2016
 *   Version: bower.json or package.json   
 *********************************************************************/
 
-//@import "1366px";
-//@import "1280px";
-//@import "1024px";
-
-@import "320px";
 
 
-//mobile and tablets
-@import "mobile/mobile-dir";
-@import "tablets/tablets-dir";
+@import "iphone6/landscape";
+@import "iphone6/portrait";
+
+
+@import "iphone6_plus/landscape";
+@import "iphone6_plus/portrait";
