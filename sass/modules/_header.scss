@@ -6,3 +6,23 @@
 *   Date : 26/11/2015
 *   Version: bower.json or package.json   
 *********************************************************************/
+
+/* logo */
+header h1 {
+	height: 40px;
+    width: 140px;
+	float: left;
+	background: url(../../public/images/logo.png) 0 0 no-repeat;
+	text-indent: -9999px;
+	}
+
+
+header nav {
+	float: right;
+	margin-top: 40px; 
+	}
+
+header nav li {
+	display: inline;
+	margin-left: 15px;
+}

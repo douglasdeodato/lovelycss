@@ -6,3 +6,38 @@
 *   Date : 26/11/2015
 *   Version: bower.json or package.json   
 *********************************************************************/
+
+#container {
+	width: 96%;	
+	max-width: 920px;
+	margin: auto;
+	padding: 2%;
+} 
+
+#main {
+		width: 70%;
+		margin-right: 5%;
+		float: left;
+}		
+		
+aside {
+	width: 25%;
+	float: right;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 480px) {
+	
+	header nav, #main, aside {
+		float: left;
+		clear: left;
+		margin: 0 0 10px; 
+		width: 100%;
+		}	
+
+// 		#banner {
+// 		display: none;
+// }
+			
+}
