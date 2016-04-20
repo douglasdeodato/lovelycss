@@ -91,6 +91,21 @@ The provided mixins are intended to be used with the array-like variables
 .icon-email {
   @include sprite($icon-email);
 }
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
 */
 /*
 The `sprites` mixin generates identical output to the CSS template
@@ -116,7 +131,7 @@ The `sprites` mixin generates identical output to the CSS template
 /* line 20, ../../sass/helpers/_example-sprite.scss */
 .left-image-sprite {
   background-image: url(../../public/images/sprite/spritesheet.png);
-  background-position: -262px 0px;
+  background-position: -1020px -348px;
   width: 136px;
   height: 330px;
 }
@@ -4044,4 +4059,4 @@ aside {
   /* STYLES GO HERE */
 }
 
-/*# sourceMappingURL=lovelycss.development.css.map */
+/*# sourceMappingURL=lovelycss.dev.css.map */

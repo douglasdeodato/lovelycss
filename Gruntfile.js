@@ -1,7 +1,6 @@
 	module.exports = function  (grunt) {
 	var config = {};
 
-
 	//setup the configuration object
 	var jshint;
 
@@ -15,6 +14,17 @@
 			,'grunt-contrib-imagemin'
 			,'grunt-spritesmith'
 	];
+
+    			//src ===============================
+    			var src;
+				config.src = src = {
+					 sassMain  : 'sass/main.scss',
+					 distFolder: 'public/stylesheets/',
+					 devFolder : 'public/stylesheets/',
+					 libFolder : 'lib/**/*.js',
+					 sassFolder: 'sass/**/*.scss'
+					  
+				};
 
 				//Concat ===============================
 
@@ -49,7 +59,7 @@
 				//Watch ===============================
 				config.watch = {
 					 scripts: {
-					 	files: ["lib/**/*.js", "sass/**/*.scss"]
+					 	files: ["<%= src.libFolder %>", "<%= src.sassFolder %>"]
 					 	,tasks: ["dev"]
 					 	//,tasks: ["dev",'sass:dist']
 					 }
@@ -64,21 +74,29 @@
 				var sass;
 				config.sass = sass = {};
 
-					//production
+					//distribution
 						sass.dist = {
-							options: { style: "compressed"}
+							options: { 
+								style: "compressed",
+								noCache: true, 
+						        sourcemap: 'none', 
+						        update:true
+							}
 							, files: {
-								"public/stylesheets/lovelycss.dist.css" : "sass/main.scss"
+								"<%= src.distFolder %>lovelycss.dist.css" : "<%= src.sassMain %>"
 							}
 						};
 
 					//development env.
 						sass.dev = {
-						options: { style: "expanded", lineNumber: true}
-						, files: {
-							"public/stylesheets/lovelycss.development.css" : "sass/main.scss"
-						}
-					};
+							options: { 
+								style: "expanded", 
+								lineNumber: true,
+							}
+							, files: {
+								"<%= src.devFolder %>lovelycss.dev.css" : "<%= src.sassMain %>"
+							}
+						};
 
 
 				//Image min ===============================
@@ -115,7 +133,7 @@
 	//Register custom tasks ===============================
 	grunt.registerTask('default',['dev']);
 	grunt.registerTask('dev', ['concat:dev','sass:dev']);
-	grunt.registerTask('dist',['htmlmin','imagemin','sprite','concat:dev', 'uglify' , 'sass:dist']);
+	grunt.registerTask('dist',['imagemin','sprite','concat:dev', 'uglify' , 'sass:dist']);
 
 
 	//General setup ===============================
