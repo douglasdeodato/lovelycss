@@ -18,14 +18,21 @@
     			//src ===============================
     			var src;
 				config.src = src = {
-					 sassMain  : 'sass/main.scss',
-					 distFolder: 'public/stylesheets/',
-					 devFolder : 'public/stylesheets/',
-					 libFolder : 'lib/**/*.js',
-					 sassFolder: 'sass/**/*.scss'
+					 sassMain     	 : 'scss/main.scss',
+					 distFolder		 : 'public/stylesheets/lovelycss.dist.css',
+					 devFolder		 : 'public/stylesheets/lovelycss.dev.css',
+					 libFolder       : 'lib/**/*.js',
+					 sassFolder		 : 'scss/**/*.scss',
+					 spriteCssFolder : 'scss/helpers/_sprite.scss',
+					 spriteDestImg	 : 'public/images/sprite/spritesheet.png',
+					 spriteSrc		 : 'public/images/min/*.{png,jpg,gif}',
+					 imageminCwd	 : 'public/images/',
+					 imageminSrc     : '**/*.{png,jpg,gif}',
+					 imageminDest    : 'public/images/min'
 					  
 				};
 
+				
 				//Concat ===============================
 
 				var concat
@@ -83,7 +90,7 @@
 						        update:true
 							}
 							, files: {
-								"<%= src.distFolder %>lovelycss.dist.css" : "<%= src.sassMain %>"
+								"<%= src.distFolder %>" : "<%= src.sassMain %>"
 							}
 						};
 
@@ -94,7 +101,7 @@
 								lineNumber: true,
 							}
 							, files: {
-								"<%= src.devFolder %>lovelycss.dev.css" : "<%= src.sassMain %>"
+								"<%= src.devFolder %>" : "<%= src.sassMain %>"
 							}
 						};
 
@@ -121,11 +128,10 @@
 				var sprite;
 				config.sprite = sprite = {};
 				
-				 
 				  sprite.dist ={
-				        src: 'public/images/min/*.{png,jpg,gif}',
-						dest: 'public/images/sprite/spritesheet.png',
-						destCss: 'sass/helpers/_sprite.scss'
+				        src    : '<%= src.spriteSrc %>',
+						dest   : '<%= src.spriteDestImg %>',
+						destCss: '<%= src.spriteCssFolder %>'
 				    
 				  };		
 
@@ -133,7 +139,7 @@
 	//Register custom tasks ===============================
 	grunt.registerTask('default',['dev']);
 	grunt.registerTask('dev', ['concat:dev','sass:dev']);
-	grunt.registerTask('dist',['imagemin','sprite','concat:dev', 'uglify' , 'sass:dist']);
+	grunt.registerTask('dist',['sprite','imagemin','concat:dev', 'uglify' , 'sass:dist']);
 
 
 	//General setup ===============================

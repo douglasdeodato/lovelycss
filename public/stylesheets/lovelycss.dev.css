@@ -45,12 +45,12 @@
 *  =Helpers
 *********************************************************************/
 /* Clearfix semântico */
-/* line 6, ../../sass/helpers/_clearfix.scss */
+/* line 6, ../../scss/helpers/_clearfix.scss */
 .group {
   zoom: 1;
 }
 
-/* line 7, ../../sass/helpers/_clearfix.scss */
+/* line 7, ../../scss/helpers/_clearfix.scss */
 .group:after {
   clear: both;
   content: " ";
@@ -128,7 +128,7 @@ The `sprites` mixin generates identical output to the CSS template
 	in that case we are using the varible $left line 35 at this time
  	from the generated file _sprite.scss
 */
-/* line 20, ../../sass/helpers/_example-sprite.scss */
+/* line 20, ../../scss/helpers/_example-sprite.scss */
 .left-image-sprite {
   background-image: url(../../public/images/sprite/spritesheet.png);
   background-position: -1020px -348px;
@@ -3574,7 +3574,7 @@ table {
 *   Date : 26/11/2015
 *   Version: bower.json or package.json   
 *********************************************************************/
-/* line 14, ../../sass/core/_base.scss */
+/* line 14, ../../scss/core/_base.scss */
 html,
 body {
   width: 100%;
@@ -3586,36 +3586,36 @@ body {
   padding-bottom: 20px;
 }
 
-/* line 27, ../../sass/core/_base.scss */
+/* line 27, ../../scss/core/_base.scss */
 p {
   font-size: 0.75em;
 }
-/* line 29, ../../sass/core/_base.scss */
+/* line 29, ../../scss/core/_base.scss */
 p a {
   text-decoration: none;
 }
 
-/* line 35, ../../sass/core/_base.scss */
+/* line 35, ../../scss/core/_base.scss */
 ul {
   list-style-type: none;
 }
 
-/* line 37, ../../sass/core/_base.scss */
+/* line 37, ../../scss/core/_base.scss */
 h1 {
   font-size: 2.375em;
 }
 
-/* line 42, ../../sass/core/_base.scss */
+/* line 42, ../../scss/core/_base.scss */
 h2 {
   font-size: 1.5em;
 }
 
-/* line 47, ../../sass/core/_base.scss */
+/* line 47, ../../scss/core/_base.scss */
 h3 {
   font-size: 1em;
 }
 
-/* line 52, ../../sass/core/_base.scss */
+/* line 52, ../../scss/core/_base.scss */
 h4 {
   text-transform: uppercase;
 }
@@ -3644,7 +3644,7 @@ h4 {
 *   Version: bower.json or package.json   
 *********************************************************************/
 @media screen and (max-width: 320px) {
-  /* line 13, ../../sass/core/media-queries/_320px.scss */
+  /* line 13, ../../scss/core/media-queries/_320px.scss */
   .deodato {
     height: 100px;
   }
@@ -3771,7 +3771,7 @@ h4 {
 *   Version: bower.json or package.json   
 *********************************************************************/
 /* logo */
-/* line 11, ../../sass/modules/_header.scss */
+/* line 11, ../../scss/modules/_header.scss */
 header h1 {
   height: 40px;
   width: 140px;
@@ -3780,13 +3780,13 @@ header h1 {
   text-indent: -9999px;
 }
 
-/* line 20, ../../sass/modules/_header.scss */
+/* line 20, ../../scss/modules/_header.scss */
 header nav {
   float: right;
   margin-top: 40px;
 }
 
-/* line 25, ../../sass/modules/_header.scss */
+/* line 25, ../../scss/modules/_header.scss */
 header nav li {
   display: inline;
   margin-left: 15px;
@@ -3809,14 +3809,14 @@ header nav li {
 *   Version: bower.json or package.json   
 *********************************************************************/
 /* Banner */
-/* line 13, ../../sass/modules/_banner.scss */
+/* line 13, ../../scss/modules/_banner.scss */
 #banner {
   float: left;
   margin-bottom: 20px;
   width: 100%;
 }
 
-/* line 19, ../../sass/modules/_banner.scss */
+/* line 19, ../../scss/modules/_banner.scss */
 #banner img {
   width: 100%;
 }
@@ -3829,7 +3829,7 @@ header nav li {
 *   Date : 26/11/2015
 *   Version: bower.json or package.json   
 *********************************************************************/
-/* line 10, ../../sass/modules/_footer.scss */
+/* line 10, ../../scss/modules/_footer.scss */
 footer {
   float: left;
   margin-bottom: 15px;
@@ -3852,7 +3852,7 @@ footer {
 *   Date : 26/11/2015
 *   Version: bower.json or package.json   
 *********************************************************************/
-/* line 10, ../../sass/pages/_index.scss */
+/* line 10, ../../scss/pages/_index.scss */
 #container {
   width: 96%;
   max-width: 920px;
@@ -3860,14 +3860,14 @@ footer {
   padding: 2%;
 }
 
-/* line 17, ../../sass/pages/_index.scss */
+/* line 17, ../../scss/pages/_index.scss */
 #main {
   width: 70%;
   margin-right: 5%;
   float: left;
 }
 
-/* line 23, ../../sass/pages/_index.scss */
+/* line 23, ../../scss/pages/_index.scss */
 aside {
   width: 25%;
   float: right;
@@ -3875,7 +3875,7 @@ aside {
 
 /* Media Queries */
 @media screen and (max-width: 480px) {
-  /* line 32, ../../sass/pages/_index.scss */
+  /* line 32, ../../scss/pages/_index.scss */
   header nav, #main, aside {
     float: left;
     clear: left;
@@ -3908,7 +3908,7 @@ aside {
 *   Version: bower.json or package.json   
 *********************************************************************/
 @media screen and (max-width: 320px) {
-  /* line 13, ../../sass/core/media-queries/_320px.scss */
+  /* line 13, ../../scss/core/media-queries/_320px.scss */
   .deodato {
     height: 100px;
   }
