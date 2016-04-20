@@ -27,8 +27,8 @@
 					 spriteDestImg	 : 'public/images/sprite/spritesheet.png',
 					 spriteSrc		 : 'public/images/min/*.{png,jpg,gif}',
 					 imageminCwd	 : 'public/images/',
-					 imageminSrc     : '**/*.{png,jpg,gif}',
 					 imageminDest    : 'public/images/min'
+
 					  
 				};
 
@@ -111,16 +111,16 @@
 				config.imagemin = imagemin = {};
 
 					imagemin.dist = {
-								  options: {
-						          optimizationLevel: 5,
-						          progressive: true,
+							options: {
+						        optimizationLevel: 5,
+						        progressive: true,
 						      },
 						
 					        files: [{
 					            expand: true,
-					            cwd: 'public/images/',
-					            src: ['**/*.{png,jpg,gif}'],
-					            dest: 'public/images/min'
+					            cwd : '<%= src.imageminCwd %>',
+					            src : ['**/*.{png,jpg,gif}'],
+					            dest: '<%= src.imageminDest %>'
 					        }]
 					 };	
 
