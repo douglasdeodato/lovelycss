@@ -1,5 +1,8 @@
 # [LovelyCSS](http://lovelycss.com)
 
+[![Build status](https://travis-ci.org/douglasdeodato/lovelycss.svg?branch=master)](https://travis-ci.org/douglasdeodato/lovelycss)
+
+
 lovelyss It is an Object Oriented CSS (OOCSS), clean and organised CSS framework to help developers starting a web project from scratch.
 
 Download Now http://lovelycss.com
