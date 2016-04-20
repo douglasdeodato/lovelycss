@@ -9,7 +9,7 @@
 // Load all modules
 
 // helpers colours frist
-@import "helpers/helpers-dir";
+@import "helpers/main";
 //@import "helpers/bourbon-helpers-dir";
 @import "../bower_components/reset-css/reset";
 
@@ -19,22 +19,22 @@
 @import "../bower_components/components-font-awesome/scss/font-awesome";
 
 // core CSS
-@import"core/core-dir";
+@import"core/main";
 
 // modules CSS
-@import"modules/modules-dir";
+@import"modules/main";
 
 // modules CSS
 //@import"vendor/simple-sidebar";
 
 //pages
-@import "pages/pages-dir";
+@import "pages/main";
 
 //overwrite
-@import "helpers/overwrite-dir";
+//@import "helpers/overwrite-dir";
 
 // media queries
-@import"core/media-queries/media-queries-dir";
+@import"core/media-queries/main";
 
 
 
