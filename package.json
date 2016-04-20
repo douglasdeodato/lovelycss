@@ -25,6 +25,8 @@
     "grunt-contrib-watch": "*",
     "grunt-contrib-concat": "*",
     "grunt-spritesmith": "*",
-    "grunt-contrib-imagemin": "*"
+    "grunt-contrib-imagemin": "*",
+    "grunt-ngdocs": "*",
+    "grunt-sassdoc": "*"
   }
 }

@@ -13,6 +13,8 @@
 			,'grunt-contrib-sass'
 			,'grunt-contrib-imagemin'
 			,'grunt-spritesmith'
+			,'grunt-sassdoc'
+			//,'grunt-ngdocs'
 	];
 
     			//src ===============================
@@ -32,7 +34,19 @@
 					  
 				};
 
-				
+			/*	var ngdocs
+				config.ngdocs = ngdocs ={
+					  ngdocs: {
+				      	  all: ['/scss'],
+
+					      options: {
+					      title: 'lovelycss Documentation',
+					      dest: 'docs',
+					      startPage: '/scss'
+					  	  }
+			    	  }
+    			}; */
+
 				//Concat ===============================
 
 				var concat
@@ -105,6 +119,18 @@
 							}
 						};
 
+				//Sass Doc
+
+				var sassdoc
+				config.sassdoc = sassdoc ={
+					  sassdoc: {
+				      default: {
+				      src: 'scss/**/*.scss',
+				    },
+ 				  },
+    			};
+
+				
 
 				//Image min ===============================
 				var imagemin;
@@ -138,7 +164,7 @@
 
 	//Register custom tasks ===============================
 	grunt.registerTask('default',['dev']);
-	grunt.registerTask('dev', ['concat:dev','sass:dev']);
+	grunt.registerTask('dev', ['concat:dev','sass:dev', 'sassdoc']);
 	grunt.registerTask('dist',['sprite','imagemin','concat:dev', 'uglify' , 'sass:dist']);
 
 
