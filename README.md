@@ -2,6 +2,10 @@
 
 [![Build status](https://travis-ci.org/douglasdeodato/lovelycss.svg?branch=master)](https://travis-ci.org/douglasdeodato/lovelycss)
 
+[![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
+[![npm version](https://badge.fury.io/js/bower.svg)](https://badge.fury.io/js/bower)
+
+
 
 ## About
 
