@@ -35,12 +35,12 @@ We are trying make developers and designers life easy; lovelycss containes all y
 
 On lovelycss you are going to be able to:
 
-minimize your css quicker
-compress and organize your sass files
-watch what is going on in your project with Grunt Watch.
-create a sprite with your all images just runing a command line
-minimize your images with a just simple command line.
-concat your css and js files easily
+- minimize your css quicker
+- compress and organize your sass files
+- watch what is going on in your project with Grunt Watch.
+- create a sprite with your all images just runing a command line
+- minimize your images with a just simple command line.
+- concat your css and js files easily
 
 Get the latest version of angular, boostrap, font awesome, reset css, normalize and more with just a command line.
 
