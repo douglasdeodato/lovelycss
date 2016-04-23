@@ -11,6 +11,8 @@
 
 lovely css is an object oriented CSS (OOCSS), clean and organised SCSS structure to help developers starting a web project from scratch.
 
+You are thinking, oh no... not another framework, methodology or structure.  Well we don't want reinvent the wheel, it's just a lovely way to start your project.
+
 Download Now http://lovelycss.com
 
 
@@ -31,7 +33,7 @@ Download Now http://lovelycss.com
 
 ## Why Use it?
 
-We are trying make developers and designers life easy; lovelycss containes all you need to start your project.
+We are trying make developers and designers life easy; lovelycss containes all you need to start your project with a nice and clean SCSS to a Gruntfile.
 
 On lovelycss you are going to be able to:
 
