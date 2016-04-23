@@ -5,7 +5,7 @@
 
 ## About
 
-lovelyss It is an Object Oriented CSS (OOCSS), clean and organised CSS framework to help developers starting a web project from scratch.
+lovelyss It is an Object Oriented CSS (OOCSS), clean and organised SCSS Structure to help developers starting a web project from scratch.
 
 Download Now http://lovelycss.com
 
@@ -83,7 +83,7 @@ lovelycss.dist.css  for distribution when you finish your App.
 
 
 ## Bugs and feature requests
-### SASS Structure
+### SCSS Structure
 
 ```
 ├── scss/
@@ -115,7 +115,7 @@ lovelycss/
 
 ## Samples
 
-- [Contributing](https://github.com/douglasdeodato/lovelycss/blob/master/readme_helpers/fontAwesome.md)
+- [Check Out](https://github.com/douglasdeodato/lovelycss/blob/master/readme_helpers/fontAwesome.md)
 
 ## Contributing
 

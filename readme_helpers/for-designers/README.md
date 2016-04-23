@@ -3,7 +3,7 @@
 - [Step 2](#step2)
 - [Step 3](#step3)
 - [SASS Structure](#structure)
-- [SASS Summary](#sasssummary)
+- [SASS Summary](#scsssummary)
 - [Sprite](https://github.com/douglasdeodato/lovelycss/blob/master/readme_helpers/for-designers/SPRITE.md)
 
 ## For Designers:
@@ -76,7 +76,7 @@ lovelycss.dist.css  for distribution when you finish your App.
 
 
 
-### SASS Structure
+### SCSS Structure
 
 ```
 ├── scss/
@@ -88,7 +88,7 @@ lovelycss.dist.css  for distribution when you finish your App.
 ```
 
 
-## Summary Sass
+## Summary SCSS
 
 core/
 
