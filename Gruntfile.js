@@ -13,7 +13,7 @@
 			,'grunt-contrib-sass'
 			,'grunt-contrib-imagemin'
 			,'grunt-spritesmith'
-			,'grunt-sassdoc'
+			//,'grunt-sassdoc'
 			//,'grunt-ngdocs'
 	];
 
@@ -81,7 +81,7 @@
 				config.watch = {
 					 scripts: {
 					 	files: ["<%= src.libFolder %>", "<%= src.sassFolder %>"]
-					 	,tasks: ["dev"]
+					 	,tasks: ["dev", "sass:dist"]
 					 	//,tasks: ["dev",'sass:dist']
 					 }
 				}
@@ -121,14 +121,14 @@
 
 				//Sass Doc
 
-				var sassdoc
-				config.sassdoc = sassdoc ={
-					  sassdoc: {
-				      default: {
-				      src: 'scss/**/*.scss',
-				    },
- 				  },
-    			};
+				//var sassdoc
+				//config.sassdoc = sassdoc ={
+				//	  sassdoc: {
+				    //  default: {
+				   //   src: 'scss/**/*.scss',
+				 //   },
+ 				//  },
+    			//};
 
 				
 
@@ -164,7 +164,7 @@
 
 	//Register custom tasks ===============================
 	grunt.registerTask('default',['dev']);
-	grunt.registerTask('dev', ['concat:dev','sass:dev', 'sassdoc']);
+	grunt.registerTask('dev', ['concat:dev','sass:dev']);
 	grunt.registerTask('dist',['sprite','imagemin','concat:dev', 'uglify' , 'sass:dist']);
 
 

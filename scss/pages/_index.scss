@@ -12,6 +12,22 @@
 	max-width: 920px;
 	margin: auto;
 	padding: 2%;
+
+	header {
+		color: white;
+		background-color: red;
+	}
+
+	a {
+		color: red;
+
+		&:hover{
+			color:blue;
+		}
+		&:after {
+			content: $fa-var-anchor;
+		}
+	}
 } 
 
 #main {
