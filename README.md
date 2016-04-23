@@ -3,6 +3,8 @@
 [![Build status](https://travis-ci.org/douglasdeodato/lovelycss.svg?branch=master)](https://travis-ci.org/douglasdeodato/lovelycss)
 
 
+## About
+
 lovelyss It is an Object Oriented CSS (OOCSS), clean and organised CSS framework to help developers starting a web project from scratch.
 
 Download Now http://lovelycss.com
@@ -18,13 +20,10 @@ Download Now http://lovelycss.com
 - [Grunt](#grunt)
 - [Grunt Sass](#gruntsass)
 - [For Designers](#fordesigners)
-- [lovelycss Structure](#lovelycss structure)
-- [lovelycss Samples](#lovelycss samples)
-- [lovelycss Contributing](#lovelycss contributing)
-- [lovelycss Creator](#lovelycss creator)
+- [lovelycss Structure](#structure)
+- [lovelycss Samples](#samples)
+- [lovelycss Contributing](#contributing)
 
-
-## About
 
 ## Why Use?
 
