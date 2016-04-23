@@ -69,7 +69,7 @@ That file will be in: public/stylesheets
 ## Grunt Sass
 we have 2 css files compiled by grunt sass:
 
-lovelycss.development.css  for development so you can see the line and the name of file for debug.
+lovelycss.dev.css  for development so you can see the line and the name of file for debug.
 
 lovelycss.dist.css  for distribution when you finish your App.
 
@@ -92,19 +92,19 @@ lovelycss.dist.css  for distribution when you finish your App.
 
 core/
 
-all media queries, typography, base, core-dir
+all media queries, typography, base, main
 
 helpers/
 
-colors, buttons, clearfix, mixins, etc...
+colors, buttons, clearfix, mixins, main, etc...
 
 modules/
 
-header, footer, content, menu, etc...
+header, footer, content, menu, main, etc...
 
 pages/
 
-index, login, etc..
+index, login, main, etc..
 
 vendor/
 

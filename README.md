@@ -19,6 +19,9 @@ Download Now http://lovelycss.com
 - [Grunt Sass](#gruntsass)
 - [For Designers](#fordesigners)
 - [lovelycss Structure](#lovelycss structure)
+- [lovelycss Samples](#lovelycss samples)
+- [lovelycss Contributing](#lovelycss contributing)
+- [lovelycss Creator](#lovelycss creator)
 
 
 ## About
@@ -33,7 +36,7 @@ minimize your css quick
 compress and organize your sass files
 watch what is going on in your project with Grunt Watch.
 create a sprite with your all images just runing a command line
-minimize your images with i just simple command line.
+minimize your images with a just simple command line.
 concat your css and js files easyly
 
 get the latest version of angular, boostrap, font awesome, reset css, normalize and more with just a command line.
@@ -70,7 +73,7 @@ we decided use grunt for organize and help us in repetitive tasks like minificat
 ## Grunt Sass
 we have 2 css files compiled by grunt sass:
 
-lovelycss.development.css  for development so you can see the line and the name of file for debug.
+lovelycss.dev.css  for development so you can see the line and the name of file for debug.
 
 lovelycss.dist.css  for distribution when you finish your App.
 
@@ -110,6 +113,16 @@ lovelycss/
     ├── images/
     └── fonts/
 ```
+
+## Samples
+
+- [Contributing](https://github.com/douglasdeodato/lovelycss/blob/master/readme_helpers/fontAwesome.md)
+
+## Contributing
+
+- [Contributing](https://github.com/douglasdeodato/lovelycss/blob/master/readme_helpers/Contributing.md)
+
+
 
 ## Creator
 

@@ -27,6 +27,5 @@
     "grunt-spritesmith": "*",
     "grunt-contrib-imagemin": "*",
     "grunt-ngdocs": "*"
-   // "grunt-sassdoc": "*"
   }
 }

@@ -1,19 +1,18 @@
 /*********************************************************************
-*   =Main Css from Helpers
-*
 *   Author: @douglasdeodato
 *   Site: lovelycss.com
-*   Date : 26/11/2015
+*   Date : 23/042016
 *   Version: bower.json or package.json   
 *********************************************************************/
 
 
-@import "colors";
-@import "mixins";
-@import "overwrite";
-@import "clearfix";
-@import "buttons";
-@import "sprite";
+	a {
+		color: red;
 
-//overwrite boostrap
-//@import "overwrite/bootstrap/modal";
+		&:hover{
+			color:blue;
+		}
+		&:after {
+			content: $fa-var-anchor;
+		}
+	}
