@@ -9,7 +9,7 @@
 
 ## About
 
-lovelyss It is an Object Oriented CSS (OOCSS), clean and organised SCSS Structure to help developers starting a web project from scratch.
+lovely css is an object oriented CSS (OOCSS), clean and organised SCSS structure to help developers starting a web project from scratch.
 
 Download Now http://lovelycss.com
 
@@ -29,20 +29,20 @@ Download Now http://lovelycss.com
 - [lovelycss Contributing](#contributing)
 
 
-## Why Use?
+## Why Use it?
 
-We are trying make developers and designers life easy, lovelycss brings all you need for start your project from scratch and with everything you need.
+We are trying make developers and designers life easy; lovelycss containes all you need to start your project.
 
-on lovelycss you gonna be able to:
+On lovelycss you are going to be able to:
 
-minimize your css quick
+minimize your css quicker
 compress and organize your sass files
 watch what is going on in your project with Grunt Watch.
 create a sprite with your all images just runing a command line
 minimize your images with a just simple command line.
-concat your css and js files easyly
+concat your css and js files easily
 
-get the latest version of angular, boostrap, font awesome, reset css, normalize and more with just a command line.
+Get the latest version of angular, boostrap, font awesome, reset css, normalize and more with just a command line.
 
 
 ## Documentation
