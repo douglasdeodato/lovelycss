@@ -1,0 +1,16 @@
+/*********************************************************************
+*   =em Convert
+*   Author: @douglasdeodato
+*   Site: lovelycss.com
+*   Date : 04/05/2016
+*   Version: bower.json or package.json   
+*********************************************************************/
+
+@function calcEm($size) {
+  $emSize: $size / 16px;
+  @return #{$emSize}em;
+}
+
+@mixin emSize($size) {
+  font-size: calcEm($size);
+}
