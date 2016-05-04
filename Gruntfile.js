@@ -4,19 +4,6 @@
 	//setup the configuration object
 	var jshint;
 
-	//all tasks that must be loaded.
-	var tasks = [
-			'grunt-contrib-jshint'
-			,'grunt-contrib-watch'
-			,'grunt-contrib-concat'
-			,'grunt-contrib-uglify'
-			,'grunt-contrib-sass'
-			,'grunt-contrib-imagemin'
-			,'grunt-spritesmith'
-			//,'grunt-sassdoc'
-			//,'grunt-ngdocs'
-	];
-
     			//src ===============================
     			var src;
 				config.src = src = {
@@ -29,9 +16,7 @@
 					 spriteDestImg	 : 'public/images/sprite/spritesheet.png',
 					 spriteSrc		 : 'public/images/min/*.{png,jpg,gif}',
 					 imageminCwd	 : 'public/images/',
-					 imageminDest    : 'public/images/min'
-
-					  
+					 imageminDest    : 'public/images/min'  
 				};
 
 			/*	var ngdocs
@@ -55,8 +40,8 @@
 				concat.dev = {
 					files: {
 						"public/myapp.development.js": [
-							"with-bootstrap/public/js/vendor"
-							,"with-bootstrap/public/js/**/*.js"
+						"with-bootstrap/public/js/vendor"
+						,"with-bootstrap/public/js/**/*.js"
 						]
 					}
 				};
@@ -130,8 +115,6 @@
  				//  },
     			//};
 
-				
-
 				//Image min ===============================
 				var imagemin;
 				config.imagemin = imagemin = {};
@@ -161,16 +144,34 @@
 				    
 				  };		
 
+				//connect ===============================
+				/*var connect;
+				config.connect = connect = {};
+				 connect: {
+				    main: {
+				      options: {
+				        port: 8000,
+				        hostname: '0.0.0.0'
+				      }
+				    }
+				  };*/
 
 	//Register custom tasks ===============================
 	grunt.registerTask('default',['dev']);
 	grunt.registerTask('dev', ['concat:dev','sass:dev']);
 	grunt.registerTask('dist',['sprite','imagemin','concat:dev', 'uglify' , 'sass:dist']);
+	require('time-grunt')(grunt);
+	require('load-grunt-tasks')(grunt, {
+    	scope: 'devDependencies'
+  	});
+
+	/*grunt.registerTask('serve', 'start web server for jasmine tests in browser', function() {
+   		grunt.task.run('connect:main:keepalive');
+	});*/
 
 
 	//General setup ===============================
 	grunt.initConfig(config);
-	tasks.forEach(grunt.loadNpmTasks);
 
 };
 
