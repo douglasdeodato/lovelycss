@@ -8,27 +8,14 @@
 
 // helpers colours frist
 @import "helpers/main";
-
 @import "../bower_components/reset-css/reset";
-
 //Vendor CSS
 @import "../bower_components/components-font-awesome/scss/font-awesome";
-
 //Core CSS
 @import"core/main";
-
 //Modules CSS
 @import"modules/main";
-
 //Pages
 @import "pages/main";
-
 //Media Queries
 @import"core/media-queries/main";
-
-
-
-
-
-
-

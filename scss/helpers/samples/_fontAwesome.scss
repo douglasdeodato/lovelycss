@@ -5,14 +5,12 @@
 *   Version: bower.json or package.json   
 *********************************************************************/
 
-
-	a {
-		color: red;
-
-		&:hover{
-			color:blue;
-		}
-		&:after {
-			content: $fa-var-anchor;
-		}
-	}
+a {
+  color: red;
+  &:hover {
+    color: blue;
+  }
+  &:after {
+    content: $fa-var-anchor;
+  }
+}
