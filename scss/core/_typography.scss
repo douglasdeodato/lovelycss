@@ -7,6 +7,12 @@
 *********************************************************************/
 
 
-$baseFontSize: 16px;
-$baseFontFamily: MyriadPro, FontAwesome;
+$root-font-size: 16px !default;
+$root-line-height:1.5rem;
+
+$root-font-weight:normal;
+
+$root-font-family: MyriadPro, FontAwesome;
 $baseTextColor: $black;
+
+$font-size-normal: 1rem !default;

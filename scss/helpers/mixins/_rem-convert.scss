@@ -6,11 +6,11 @@
 *   Version: bower.json or package.json   
 *********************************************************************/
 
-@function calcEm($size) {
-  $emSize: $size / 16px;
-  @return #{$emSize}em;
+@function calcRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}em;
 }
 
-@mixin emSize($size) {
-  font-size: calcEm($size);
+@mixin remSize($size) {
+  font-size: calcRem($size);
 }

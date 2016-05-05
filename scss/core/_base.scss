@@ -18,7 +18,7 @@ body {
     height: 100%;
     min-height: 100%;
     color: $baseTextColor;
-    font: normal normal 100%/1.5em $baseFontFamily;
+    font: $root-font-weight $root-font-size/#{$root-line-height} $root-font-family;
     padding-top: 50px;
     padding-bottom: 20px;
      
@@ -26,7 +26,7 @@ body {
 
 a {}
 p { 
-    @include emSize(12px);
+    @include remSize(12px);
     a { 
       text-decoration: none;
     }
@@ -35,11 +35,11 @@ p {
 
 ul {list-style-type: none;}
 
-h1 {@include emSize(38px);}
+h1 {@include remSize(38px);}
 
-h2 {@include emSize(24px);}
+h2 {@include remSize(24px);}
 
-h3 {@include emSize(16px);}
+h3 {@include remSize(16px);}
 
 h4 {text-transform: uppercase;}
 
