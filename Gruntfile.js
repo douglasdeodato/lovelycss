@@ -104,6 +104,20 @@
 							}
 						};
 
+					//ScssLint ===============================
+						var scsslint;
+						config.scsslint = scsslint = {
+					        allFiles: [
+					          'scss/core/_base.scss',
+					        ],
+					        options: {
+					          config: 'scss/.scss-lint.yml',
+					          reporterOutput: '.tmp/scss-lint-report.xml',
+					          colorizeOutput: true,
+					          compact:false
+					        }  
+					  	};
+
 				//Sass Doc
 
 				//var sassdoc
