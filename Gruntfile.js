@@ -108,13 +108,17 @@
 						var scsslint;
 						config.scsslint = scsslint = {
 					        allFiles: [
-					          'scss/core/_base.scss',
+					          'scss/**/*.scss',
 					        ],
 					        options: {
 					          config: 'scss/.scss-lint.yml',
 					          reporterOutput: '.tmp/scss-lint-report.xml',
 					          colorizeOutput: true,
-					          compact:false
+					          compact:false,
+					          exclude: [
+					            'scss/helpers/**/*.scss', 'scss/modules/**/*.scss',
+					            'scss/pages/**/*.scss', 'scss/vendor/**/*.scss'
+					          ]
 					        }  
 					  	};
 
