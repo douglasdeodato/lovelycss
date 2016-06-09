@@ -7,10 +7,11 @@
 *   Version: bower.json or package.json   
 *********************************************************************/
 
-@import "variables/colors";
 @import "mixins/rem-convert";
 @import "mixins";
-@import "overwrite";
 @import "clearfix";
 @import "buttons";
 @import "sprite";
+
+@import "functions/main";
+@import "utilities/main";
