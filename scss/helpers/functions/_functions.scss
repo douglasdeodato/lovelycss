@@ -11,3 +11,7 @@
 @if variable-exists(font-url--google) {
   @import url($font-url--google);
 }
+
+@function palette($palette, $shade: 'base') {
+	@return map-get(map-get($color-palettes, $palette), $shade);
+}

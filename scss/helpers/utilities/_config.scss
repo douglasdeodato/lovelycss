@@ -31,3 +31,15 @@ $grey  : #797e83;
 $font-size-root: 16px !default;
 $line-height-root:1.5rem;
 
+
+// Color Palette
+
+$color-palettes: (
+	black: (
+		light    : lighten($black, 10%),
+		base     : $black,
+		dark     : darken($black, 10%)
+	)
+);
+
+
