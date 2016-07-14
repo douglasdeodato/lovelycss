@@ -7,13 +7,10 @@
 *   Version: bower.json or package.json   
 *********************************************************************/
 
-
-@import "colors";
+@import "utilities/main";
+@import "mixins/rem-convert";
 @import "mixins";
-@import "overwrite";
 @import "clearfix";
 @import "buttons";
 @import "sprite";
-
-//overwrite boostrap
-//@import "overwrite/bootstrap/modal";
+@import "functions/main";

@@ -6,52 +6,53 @@
 *   Version: bower.json or package.json   
 *********************************************************************/
 
+
+/*********************************************************************
 //Golden Rule:  
 //100% = 16px  browsers default
 //21px ÷ 16px = 1.5em
-
+//use helpers/mixins/rem-convert
+*********************************************************************/
 
 html,
 body {
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
-    color:#565a5c;
-    font: normal normal 100%/1.5em "MyriadPro", "FontAwesome";
-    padding-top: 50px;
-    padding-bottom: 20px;
-     
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  color: palette(black,dark);
+  font: $font-weight-medium $font-size-root/#{$line-height-root} $font-family-root;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 a {}
-p { 
-    font-size: 0.75em;
-    a { 
-      text-decoration: none;
-    }
-      &:hover { }
-    }
 
-ul {list-style-type: none;}
+p {
+  @include remSize(12px);
+  a {
+    text-decoration: none;
+  }
+  //&:hover {}
+}
+
+ul {
+  list-style-type: none;
+}
 
 h1 {
-  font-size: 2.375em;
- 
+  @include remSize(38px);
 }
 
 h2 {
-  font-size: 1.5em;
- 
+  @include remSize(24px);
 }
 
 h3 {
-  font-size: 1em;
-  
+  @include remSize(16px);
 }
 
 h4 {
   text-transform: uppercase;
- 
 }
 
-h5 {}
+// h5 {}

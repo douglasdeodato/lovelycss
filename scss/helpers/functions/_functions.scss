@@ -1,16 +1,17 @@
 /*********************************************************************
+*   
+*
 *   Author: @douglasdeodato
 *   Site: lovelycss.com
-*   Date : 23/042016
+*   Date : 09/06/2016
 *   Version: bower.json or package.json   
 *********************************************************************/
 
-a {
-  color: red;
-  &:hover {
-    color: blue;
-  }
-  &:after {
-    content: $fa-var-anchor;
-  }
+
+@if variable-exists(font-url--google) {
+  @import url($font-url--google);
+}
+
+@function palette($palette, $shade: 'base') {
+	@return map-get(map-get($color-palettes, $palette), $shade);
 }

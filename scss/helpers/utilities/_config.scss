@@ -1,0 +1,45 @@
+/*********************************************************************
+*   
+*
+*   Author: @douglasdeodato
+*   Site: lovelycss.com
+*   Date : 09/06/2016
+*   Version: bower.json or package.json   
+*********************************************************************/
+
+
+// Font Stacks
+
+$font-url-google        : 'http://fonts.googleapis.com/css?family=Tangerine:100,300,400,700,900';
+$font-family-root       : 'Tangerine', Helvetica, Arial, sans-serif, FontAwesome;
+$font-family-secondary  :  Helvetica, Arial, sans-serif;
+
+// Font Weights
+
+$font-weight-light      : 300;
+$font-weight-medium     : 400;
+$font-weight-bold       : 700;
+
+// Base Colors
+
+$white : #fff;
+$black : #0b0b0b;
+$grey  : #797e83;
+
+// Text
+
+$font-size-root: 16px !default;
+$line-height-root:1.5rem;
+
+
+// Color Palette
+
+$color-palettes: (
+	black: (
+		light    : lighten($black, 10%),
+		base     : $black,
+		dark     : darken($black, 10%)
+	)
+);
+
+

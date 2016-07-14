@@ -7,20 +7,17 @@
 *   Version: bower.json or package.json   
 *********************************************************************/
 
-
 @mixin rounded($amount) {
-  -moz-border-radius    : $amount;
-  -webkit-border-radius : $amount;
-  border-radius         : $amount;
+  -moz-border-radius: $amount;
+  -webkit-border-radius: $amount;
+  border-radius: $amount;
 }
-
 
 @mixin border-radius($radius) {
-  -webkit-border-top-left-radius  : $radius;
-  -webkit-border-top-right-radius : $radius;
-  -moz-border-radius-topleft      : $radius;
-  -moz-border-radius-topright     : $radius;
-  border-top-left-radius          : $radius;
-  border-top-right-radius         : $radius;
+  -webkit-border-top-left-radius: $radius;
+  -webkit-border-top-right-radius: $radius;
+  -moz-border-radius-topleft: $radius;
+  -moz-border-radius-topright: $radius;
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
 }
-

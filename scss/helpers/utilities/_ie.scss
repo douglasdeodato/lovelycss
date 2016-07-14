@@ -1,0 +1,39 @@
+/*********************************************************************
+*
+* 	Author: @douglasdeodato
+* 	Site: lovelycss.com
+* 	Date : 04/05/2016
+*   Version: bower.json or package.json   
+*********************************************************************/
+
+
+
+/* ==========================================================================
+  Browser support
+  ========================================================================== */
+$ie7: false;
+$ie8: false;
+
+
+//usage but not tested.
+
+/*
+
+.class {
+	@if $ie7 == true or $ie8 == true {
+		do this 
+		}
+}
+
+
+.box {
+  @if $ie7 == true {
+    border: 1px solid #aaa
+    }
+  @else {
+    -moz-box-shadow: 0 0 5px #aaa
+    -webkit-box-shadow: 0 0 5px #aaa
+    box-shadow: 0 0 5px #aaa
+}
+}
+*/

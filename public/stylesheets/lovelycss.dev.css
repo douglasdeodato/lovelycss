@@ -2,7 +2,7 @@
 /*********************************************************************
 *
 * 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
+* 	Site: lovelycss.com
 * 	Date : 26/11/2015
 *   Version: bower.json or package.json   
 *********************************************************************/
@@ -18,19 +18,45 @@
 *   
 *
 *   Author: @douglasdeodato
-*   Sitw: lovelycss.com
-*   Date : 26/11/2015
+*   Site: lovelycss.com
+*   Date : 09/06/2016
 *   Version: bower.json or package.json   
 *********************************************************************/
 /*********************************************************************
-*  =legend    
-*********************************************************************/
-/*********************************************************************
-*   
 *
+* 	Author: @douglasdeodato
+* 	Site: lovelycss.com
+* 	Date : 04/05/2016
+*   Version: bower.json or package.json   
+*********************************************************************/
+/* ==========================================================================
+  Browser support
+  ========================================================================== */
+/*
+
+.class {
+	@if $ie7 == true or $ie8 == true {
+		do this 
+		}
+}
+
+
+.box {
+  @if $ie7 == true {
+    border: 1px solid #aaa
+    }
+  @else {
+    -moz-box-shadow: 0 0 5px #aaa
+    -webkit-box-shadow: 0 0 5px #aaa
+    box-shadow: 0 0 5px #aaa
+}
+}
+*/
+/*********************************************************************
+*   =em Convert
 *   Author: @douglasdeodato
-*   Sitw: lovelycss.com
-*   Date : 26/11/2015
+*   Site: lovelycss.com
+*   Date : 04/05/2016
 *   Version: bower.json or package.json   
 *********************************************************************/
 /*********************************************************************
@@ -99,34 +125,11 @@ The `sprites` mixin generates identical output to the CSS template
 @include sprites($spritesheet-sprites);
 */
 /*********************************************************************
-*   Author: @douglasdeodato
-*   Site: lovelycss.com
-*   Date : 10/02/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
-/* example using sprite  */
-/* after generate your sprite unsing grunt sprite
-   you can take the varibles and insert in the css class
-   and you will get the image :)  easy.
-*/
-/*
-	in that case we are using the varible $left line 35 at this time
- 	from the generated file _sprite.scss
-*/
-/* line 20, ../../scss/helpers/_example-sprite.scss */
-.left-image-sprite {
-  background-image: url(../../public/images/sprite/spritesheet.png);
-  background-position: -1020px -348px;
-  width: 136px;
-  height: 330px;
-}
-
-/*********************************************************************
 *   
 *
 *   Author: @douglasdeodato
-*   Sitw: lovelycss.com
-*   Date : 26/11/2015
+*   Site: lovelycss.com
+*   Date : 09/06/2016
 *   Version: bower.json or package.json   
 *********************************************************************/
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -3546,9 +3549,9 @@ table {
 }
 
 /*********************************************************************
-*
+*   =Main Core File
 * 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
+* 	Site: lovelycss.com
 * 	Date : 26/11/2015
 *   Version: bower.json or package.json   
 *********************************************************************/
@@ -3559,59 +3562,58 @@ table {
 *   Date : 26/11/2015
 *   Version: bower.json or package.json   
 *********************************************************************/
-/* line 14, ../../scss/core/_base.scss */
+/*********************************************************************
+//Golden Rule:  
+//100% = 16px  browsers default
+//21px ÷ 16px = 1.5em
+//use helpers/mixins/rem-convert
+*********************************************************************/
+/* line 17, ../../scss/core/_base.scss */
 html,
 body {
   width: 100%;
   height: 100%;
   min-height: 100%;
-  color: #565a5c;
-  font: normal normal 100%/1.5em "MyriadPro", "FontAwesome";
+  color: black;
+  font: 400 16px/1.5rem "Tangerine", Helvetica, Arial, sans-serif, FontAwesome;
   padding-top: 50px;
   padding-bottom: 20px;
 }
 
-/* line 27, ../../scss/core/_base.scss */
+/* line 30, ../../scss/core/_base.scss */
 p {
   font-size: 0.75em;
 }
-/* line 29, ../../scss/core/_base.scss */
+/* line 32, ../../scss/core/_base.scss */
 p a {
   text-decoration: none;
 }
 
-/* line 35, ../../scss/core/_base.scss */
+/* line 38, ../../scss/core/_base.scss */
 ul {
   list-style-type: none;
 }
 
-/* line 37, ../../scss/core/_base.scss */
+/* line 42, ../../scss/core/_base.scss */
 h1 {
   font-size: 2.375em;
 }
 
-/* line 42, ../../scss/core/_base.scss */
+/* line 46, ../../scss/core/_base.scss */
 h2 {
   font-size: 1.5em;
 }
 
-/* line 47, ../../scss/core/_base.scss */
+/* line 50, ../../scss/core/_base.scss */
 h3 {
   font-size: 1em;
 }
 
-/* line 52, ../../scss/core/_base.scss */
+/* line 54, ../../scss/core/_base.scss */
 h4 {
   text-transform: uppercase;
 }
 
-/*********************************************************************
-*
-* 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
-* 	Date : 26/11/2015
-*   Version: bower.json or package.json   
-*********************************************************************/
 /*********************************************************************
 * 	Media Query » screen equal or less than 1024px 
 *
@@ -3756,7 +3758,7 @@ h4 {
 *   Version: bower.json or package.json   
 *********************************************************************/
 /* logo */
-/* line 11, ../../scss/modules/_header.scss */
+/* line 13, ../../scss/modules/_header.scss */
 header h1 {
   height: 40px;
   width: 140px;
@@ -3765,13 +3767,13 @@ header h1 {
   text-indent: -9999px;
 }
 
-/* line 20, ../../scss/modules/_header.scss */
+/* line 21, ../../scss/modules/_header.scss */
 header nav {
   float: right;
   margin-top: 40px;
 }
 
-/* line 25, ../../scss/modules/_header.scss */
+/* line 26, ../../scss/modules/_header.scss */
 header nav li {
   display: inline;
   margin-left: 15px;
@@ -3844,32 +3846,32 @@ footer {
   margin: auto;
   padding: 2%;
 }
-/* line 16, ../../scss/pages/_index.scss */
+/* line 15, ../../scss/pages/_index.scss */
 #container header {
   color: white;
   background-color: red;
 }
-/* line 21, ../../scss/pages/_index.scss */
+/* line 19, ../../scss/pages/_index.scss */
 #container a {
   color: red;
 }
-/* line 24, ../../scss/pages/_index.scss */
+/* line 21, ../../scss/pages/_index.scss */
 #container a:hover {
   color: blue;
 }
-/* line 27, ../../scss/pages/_index.scss */
+/* line 24, ../../scss/pages/_index.scss */
 #container a:after {
   content: "";
 }
 
-/* line 33, ../../scss/pages/_index.scss */
+/* line 30, ../../scss/pages/_index.scss */
 #main {
   width: 70%;
   margin-right: 5%;
   float: left;
 }
 
-/* line 39, ../../scss/pages/_index.scss */
+/* line 36, ../../scss/pages/_index.scss */
 aside {
   width: 25%;
   float: right;
@@ -3877,8 +3879,10 @@ aside {
 
 /* Media Queries */
 @media screen and (max-width: 480px) {
-  /* line 48, ../../scss/pages/_index.scss */
-  header nav, #main, aside {
+  /* line 45, ../../scss/pages/_index.scss */
+  header nav,
+  #main,
+  aside {
     float: left;
     clear: left;
     margin: 0 0 10px;

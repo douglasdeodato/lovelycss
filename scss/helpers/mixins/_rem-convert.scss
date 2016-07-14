@@ -1,15 +1,16 @@
 /*********************************************************************
-*   
-*
+*   =em Convert
 *   Author: @douglasdeodato
-*   Sitw: lovelycss.com
-*   Date : 26/11/2015
+*   Site: lovelycss.com
+*   Date : 04/05/2016
 *   Version: bower.json or package.json   
 *********************************************************************/
 
-//overwrite boostrap
-@import "overwrite/bootstrap/modal";
-@import "overwrite/bootstrap/main";
-@import "overwrite/bootstrap-theme/main";
+@function calcRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}em;
+}
 
-@import "overwrite";
+@mixin remSize($size) {
+  font-size: calcRem($size);
+}
