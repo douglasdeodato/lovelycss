@@ -1,34 +1,35 @@
-/*********************************************************************
-*
-*   Author: @douglasdeodato
-*   Sitw: lovelycss.com
-*   Date : 26/11/2015
-*   Version: bower.json or package.json   
-*********************************************************************/
+//  *********************************************************************
+//  =core/base
+//
+//  Author : @douglasdeodato
+//  Site   : lovelycss.com
+//  Project: mt-chamber
+//  Date : 26/11/2015
+//  Version: bower.json or package.json
+//  *********************************************************************/
 
 
-/*********************************************************************
-//Golden Rule:  
-//100% = 16px  browsers default
-//21px ÷ 16px = 1.5em
-//use helpers/mixins/rem-convert
-*********************************************************************/
+//*********************************************************************
+//  Golden Rule:
+//  100% = 16px  browsers default
+//  21px ÷ 16px = 1.5em
+//  use helpers/mixins/rem-convert
+// *********************************************************************/
 
 html,
 body {
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
+  // scss-lint:disable ColorVariable,ColorKeyword,SpaceAfterComma
   color: palette(black,dark);
   font: $font-weight-medium $font-size-root/#{$line-height-root} $font-family-root;
-  padding-top: 50px;
+  height: 100%;
+  min-height: 100%;
   padding-bottom: 20px;
+  padding-top: 50px;
+  width: 100%;
 }
 
-a {}
-
 p {
-  @include remSize(12px);
+  @include rem-size(12px);
   a {
     text-decoration: none;
   }
@@ -40,19 +41,17 @@ ul {
 }
 
 h1 {
-  @include remSize(38px);
+  @include rem-size(38px);
 }
 
 h2 {
-  @include remSize(24px);
+  @include rem-size(24px);
 }
 
 h3 {
-  @include remSize(16px);
+  @include rem-size(16px);
 }
 
 h4 {
   text-transform: uppercase;
 }
-
-// h5 {}

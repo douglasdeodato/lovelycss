@@ -11,6 +11,6 @@
   @return #{$remSize}em;
 }
 
-@mixin remSize($size) {
+@mixin rem-size($size) {
   font-size: calcRem($size);
 }

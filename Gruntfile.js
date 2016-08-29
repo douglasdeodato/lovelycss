@@ -19,19 +19,6 @@
 					 imageminDest    : 'public/images/min'  
 				};
 
-			/*	var ngdocs
-				config.ngdocs = ngdocs ={
-					  ngdocs: {
-				      	  all: ['/scss'],
-
-					      options: {
-					      title: 'lovelycss Documentation',
-					      dest: 'docs',
-					      startPage: '/scss'
-					  	  }
-			    	  }
-    			}; */
-
 				//Concat ===============================
 
 				var concat
@@ -108,7 +95,7 @@
 						var scsslint;
 						config.scsslint = scsslint = {
 					        allFiles: [
-					          'scss/**/*.scss',
+					          'scss/core/_base.scss',
 					        ],
 					        options: {
 					          config: 'scss/.scss-lint.yml',
@@ -122,16 +109,6 @@
 					        }  
 					  	};
 
-				//Sass Doc
-
-				//var sassdoc
-				//config.sassdoc = sassdoc ={
-				//	  sassdoc: {
-				    //  default: {
-				   //   src: 'scss/**/*.scss',
-				 //   },
- 				//  },
-    			//};
 
 				//Image min ===============================
 				var imagemin;
