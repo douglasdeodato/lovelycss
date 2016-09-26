@@ -162,10 +162,6 @@ module.exports = function(grunt) {
     scope: 'devDependencies'
   });
 
-  /*grunt.registerTask('serve', 'start web server for jasmine tests in browser', function() {
-   		grunt.task.run('connect:main:keepalive');
-	});*/
-
 
   //General setup ===============================
   grunt.initConfig(config);
