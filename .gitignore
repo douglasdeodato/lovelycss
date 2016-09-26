@@ -1,5 +1,6 @@
 bower_components
 node_modules
+built.css
 .tmp
 
 # Numerous always-ignore extensions
