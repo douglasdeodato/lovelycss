@@ -1,32 +1,8 @@
-@charset "UTF-8";
 /*********************************************************************
 *
 * 	Author: @douglasdeodato
 * 	Site: lovelycss.com
 * 	Date : 26/11/2015
-*   Version: bower.json or package.json   
-*********************************************************************/
-/*********************************************************************
-*   =Main Css from Helpers
-*
-*   Author: @douglasdeodato
-*   Site: lovelycss.com
-*   Date : 26/11/2015
-*   Version: bower.json or package.json   
-*********************************************************************/
-/*********************************************************************
-*   
-*
-*   Author: @douglasdeodato
-*   Site: lovelycss.com
-*   Date : 09/06/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
-/*********************************************************************
-*
-* 	Author: @douglasdeodato
-* 	Site: lovelycss.com
-* 	Date : 04/05/2016
 *   Version: bower.json or package.json   
 *********************************************************************/
 /* ==========================================================================
@@ -36,7 +12,7 @@
 
 .class {
 	@if $ie7 == true or $ie8 == true {
-		do this 
+		do this
 		}
 }
 
@@ -52,25 +28,6 @@
 }
 }
 */
-/*********************************************************************
-*   =em Convert
-*   Author: @douglasdeodato
-*   Site: lovelycss.com
-*   Date : 04/05/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
-/*********************************************************************
-*   
-*
-*   Author: @douglasdeodato
-*   Sitw: lovelycss.com
-*   Date : 26/11/2015
-*   Version: bower.json or package.json   
-*********************************************************************/
-/*********************************************************************
-*  =Helpers
-*********************************************************************/
-/* Clearfix semântico */
 /* line 6, ../../scss/helpers/_clearfix.scss */
 .group {
   zoom: 1;
@@ -86,14 +43,6 @@
   visibility: hidden;
 }
 
-/*********************************************************************
-*   
-*
-*   Author: @douglasdeodato
-*   Sitw: lovelycss.com
-*   Date : 26/11/2015
-*   Version: bower.json or package.json   
-*********************************************************************/
 /*
 SCSS variables are information about icon's compiled state, stored under its original file name
 
@@ -124,212 +73,59 @@ The `sprites` mixin generates identical output to the CSS template
 
 @include sprites($spritesheet-sprites);
 */
-/*********************************************************************
-*   
-*
-*   Author: @douglasdeodato
-*   Site: lovelycss.com
-*   Date : 09/06/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
-/*********************************************************************
-*   =Main Core File
-* 	Author: @douglasdeodato
-* 	Site: lovelycss.com
-* 	Date : 26/11/2015
-*   Version: bower.json or package.json   
-*********************************************************************/
-/* line 19, ../../scss/core/_base.scss */
+/* line 18, ../../scss/core/_base.scss */
 html,
 body {
-  height: 100%;
-  min-height: 100%;
   color: black;
   font: 400 16px/1.5rem "Tangerine", Helvetica, Arial, sans-serif, FontAwesome;
+  height: 100%;
+  min-height: 100%;
   padding-bottom: 20px;
   padding-top: 50px;
   width: 100%;
 }
 
-/* line 33, ../../scss/core/_base.scss */
+/* line 30, ../../scss/core/_base.scss */
 p {
   font-size: 0.75em;
 }
-/* line 35, ../../scss/core/_base.scss */
+/* line 32, ../../scss/core/_base.scss */
 p a {
   text-decoration: none;
 }
 
-/* line 41, ../../scss/core/_base.scss */
+/* line 38, ../../scss/core/_base.scss */
 ul {
   list-style-type: none;
 }
 
-/* line 45, ../../scss/core/_base.scss */
+/* line 42, ../../scss/core/_base.scss */
 h1 {
   font-size: 2.375em;
 }
 
-/* line 49, ../../scss/core/_base.scss */
+/* line 46, ../../scss/core/_base.scss */
 h2 {
   font-size: 1.5em;
 }
 
-/* line 53, ../../scss/core/_base.scss */
+/* line 50, ../../scss/core/_base.scss */
 h3 {
   font-size: 1em;
 }
 
-/* line 57, ../../scss/core/_base.scss */
+/* line 54, ../../scss/core/_base.scss */
 h4 {
   text-transform: uppercase;
 }
 
-/*********************************************************************
-* 	Media Query » screen equal or less than 1024px 
-*
-* 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
-* 	Date : 26/11/2015
-*   Version: bower.json or package.json   
-*********************************************************************/
-/*********************************************************************
-* 	Media Query » screen equal or less than 1024px 
-*
-* 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
-* 	Date : 26/11/2015
-*   Version: bower.json or package.json   
-*********************************************************************/
-@media screen and (max-width: 320px) {
-  /* line 13, ../../scss/core/media-queries/_320px.scss */
-  .deodato {
-    height: 100px;
+@media (min-width: 768px) {
+  /* line 2, ../../scss/core/media-queries/modules/_footer.scss */
+  footer {
+    background-color: #fff;
   }
 }
-/*/mediaquery*/
-/*********************************************************************
-* 	Media Query 
-*
-* 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
-* 	Date : 15/02/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
-/*********************************************************************
-* 	Media Query » 
-*
-* 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
-* 	Date : 15/02/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
-  /* STYLES GO HERE */
-}
-/*********************************************************************
-* 	Media Query » 
-*
-* 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
-* 	Date : 15/02/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
-  /* STYLES GO HERE */
-}
-/*********************************************************************
-* 	Media Query » 
-*
-* 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
-* 	Date : 15/02/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
-  /* STYLES GO HERE */
-}
-/*********************************************************************
-* 	Media Query » 
-*
-* 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
-* 	Date : 15/02/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
-  /* STYLES GO HERE */
-}
-/*********************************************************************
-* 	Media Query 
-*
-* 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
-* 	Date : 15/02/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
-/*********************************************************************
-* 	Media Query » 
-*
-* 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
-* 	Date : 15/02/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* STYLES GO HERE */
-}
-/*********************************************************************
-* 	Media Query » 
-*
-* 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
-* 	Date : 15/02/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* STYLES GO HERE */
-}
-/*********************************************************************
-* 	Media Query » 
-*
-* 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
-* 	Date : 15/02/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-  /* STYLES GO HERE */
-}
-/*********************************************************************
-* 	Media Query » 
-*
-* 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
-* 	Date : 15/02/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-  /* STYLES GO HERE */
-}
-/*********************************************************************
-*   =Main Css from Modules
-*
-*   Author: @douglasdeodato
-*   Site: lovelycss.com
-*   Date : 26/11/2015
-*   Version: bower.json or package.json   
-*********************************************************************/
-/*********************************************************************
-*   =Header
-*
-*   Author: @douglasdeodato
-*   Site: lovelycss.com
-*   Date : 26/11/2015
-*   Version: bower.json or package.json   
-*********************************************************************/
-/* logo */
-/* line 13, ../../scss/modules/_header.scss */
+/* line 15, ../../scss/modules/_header.scss */
 header h1 {
   height: 40px;
   width: 140px;
@@ -338,35 +134,18 @@ header h1 {
   text-indent: -9999px;
 }
 
-/* line 21, ../../scss/modules/_header.scss */
+/* line 23, ../../scss/modules/_header.scss */
 header nav {
   float: right;
   margin-top: 40px;
 }
 
-/* line 26, ../../scss/modules/_header.scss */
+/* line 28, ../../scss/modules/_header.scss */
 header nav li {
   display: inline;
   margin-left: 15px;
 }
 
-/*********************************************************************
-*   =Tooltip
-*
-*   Author: @douglasdeodato
-*   Site: lovelycss.com
-*   Date : 26/11/2015
-*   Version: bower.json or package.json   
-*********************************************************************/
-/*********************************************************************
-*   =Banner
-*
-*   Author: @douglasdeodato
-*   Site: lovelycss.com
-*   Date : 26/11/2015
-*   Version: bower.json or package.json   
-*********************************************************************/
-/* Banner */
 /* line 13, ../../scss/modules/_banner.scss */
 #banner {
   float: left;
@@ -379,66 +158,43 @@ header nav li {
   width: 100%;
 }
 
-/*********************************************************************
-*   =Footer
-*
-*   Author: @douglasdeodato
-*   Site: lovelycss.com
-*   Date : 26/11/2015
-*   Version: bower.json or package.json   
-*********************************************************************/
-/* line 10, ../../scss/modules/_footer.scss */
+/* line 12, ../../scss/modules/_footer.scss */
 footer {
   float: left;
   margin-bottom: 15px;
   width: 100%;
+  background-color: #797e83;
 }
 
-/*********************************************************************
-*   
-*
-*   Author: @douglasdeodato
-*   Sitw: lovelycss.com
-*   Date : 26/01/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
-/*********************************************************************
-*   
-*
-*   Author: @douglasdeodato
-*   Sitw: lovelycss.com
-*   Date : 26/11/2015
-*   Version: bower.json or package.json   
-*********************************************************************/
-/* line 10, ../../scss/pages/_index.scss */
+/* line 12, ../../scss/pages/_index.scss */
 #container {
   width: 96%;
   max-width: 920px;
   margin: auto;
   padding: 2%;
 }
-/* line 15, ../../scss/pages/_index.scss */
+/* line 17, ../../scss/pages/_index.scss */
 #container header {
   color: white;
   background-color: red;
 }
-/* line 19, ../../scss/pages/_index.scss */
+/* line 21, ../../scss/pages/_index.scss */
 #container a {
   color: red;
 }
-/* line 21, ../../scss/pages/_index.scss */
+/* line 23, ../../scss/pages/_index.scss */
 #container a:hover {
   color: blue;
 }
 
-/* line 30, ../../scss/pages/_index.scss */
+/* line 32, ../../scss/pages/_index.scss */
 #main {
   width: 70%;
   margin-right: 5%;
   float: left;
 }
 
-/* line 36, ../../scss/pages/_index.scss */
+/* line 38, ../../scss/pages/_index.scss */
 aside {
   width: 25%;
   float: right;
@@ -446,7 +202,7 @@ aside {
 
 /* Media Queries */
 @media screen and (max-width: 480px) {
-  /* line 45, ../../scss/pages/_index.scss */
+  /* line 47, ../../scss/pages/_index.scss */
   header nav,
   #main,
   aside {
@@ -456,140 +212,11 @@ aside {
     width: 100%;
   }
 }
-/*********************************************************************
-*   
-*
-*   Author: @douglasdeodato
-*   Sitw: lovelycss.com
-*   Date : 26/11/2015
-*   Version: bower.json or package.json   
-*********************************************************************/
-/*********************************************************************
-* 	Media Query » screen equal or less than 1024px 
-*
-* 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
-* 	Date : 26/11/2015
-*   Version: bower.json or package.json   
-*********************************************************************/
-/*********************************************************************
-* 	Media Query » screen equal or less than 1024px 
-*
-* 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
-* 	Date : 26/11/2015
-*   Version: bower.json or package.json   
-*********************************************************************/
-@media screen and (max-width: 320px) {
-  /* line 13, ../../scss/core/media-queries/_320px.scss */
-  .deodato {
-    height: 100px;
+@media (min-width: 768px) {
+  /* line 2, ../../scss/core/media-queries/modules/_footer.scss */
+  footer {
+    background-color: #fff;
   }
-}
-/*/mediaquery*/
-/*********************************************************************
-* 	Media Query 
-*
-* 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
-* 	Date : 15/02/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
-/*********************************************************************
-* 	Media Query » 
-*
-* 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
-* 	Date : 15/02/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
-  /* STYLES GO HERE */
-}
-/*********************************************************************
-* 	Media Query » 
-*
-* 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
-* 	Date : 15/02/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
-  /* STYLES GO HERE */
-}
-/*********************************************************************
-* 	Media Query » 
-*
-* 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
-* 	Date : 15/02/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
-  /* STYLES GO HERE */
-}
-/*********************************************************************
-* 	Media Query » 
-*
-* 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
-* 	Date : 15/02/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
-  /* STYLES GO HERE */
-}
-/*********************************************************************
-* 	Media Query 
-*
-* 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
-* 	Date : 15/02/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
-/*********************************************************************
-* 	Media Query » 
-*
-* 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
-* 	Date : 15/02/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* STYLES GO HERE */
-}
-/*********************************************************************
-* 	Media Query » 
-*
-* 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
-* 	Date : 15/02/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* STYLES GO HERE */
-}
-/*********************************************************************
-* 	Media Query » 
-*
-* 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
-* 	Date : 15/02/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-  /* STYLES GO HERE */
-}
-/*********************************************************************
-* 	Media Query » 
-*
-* 	Author: @douglasdeodato
-* 	Sitw: lovelycss.com
-* 	Date : 15/02/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-  /* STYLES GO HERE */
 }
 
 /*# sourceMappingURL=lovelycss.dev.css.map */

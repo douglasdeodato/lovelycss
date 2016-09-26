@@ -1,11 +1,9 @@
-/*********************************************************************
-*   
-*
-*   Author: @douglasdeodato
-*   Site: lovelycss.com
-*   Date : 09/06/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
+//*********************************************************************
+//   Author: @douglasdeodato
+//   Site: lovelycss.com
+//   Date : 09/06/2016
+//   Version: bower.json or package.json
+//*********************************************************************
 
 
 // Font Stacks
@@ -43,3 +41,8 @@ $color-palettes: (
 );
 
 
+// Bootstrap responsive variables
+$screen-xs-min: 320px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;

@@ -1,24 +1,21 @@
-/*********************************************************************
-*   Author: @douglasdeodato
-*   Site: lovelycss.com
-*   Date : 10/02/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
+//*********************************************************************
+//  Author: @douglasdeodato
+//  Site: lovelycss.com
+//  Date : 10/02/2016
+//  Version: bower.json or package.json
+// *********************************************************************
 
+// example using sprite
 
-/* example using sprite  */
+//  after generate your sprite using grunt sprite
+//  you can take the varibles and insert in the css class
+//  and you will get the image :)  easy.
+//
 
-
-/* after generate your sprite using grunt sprite
-   you can take the varibles and insert in the css class
-   and you will get the image :)  easy.
-*/
-
-
-/*
-	in that case we are using the varible $left line 35 at this time
- 	from the generated file _sprite.scss
-*/
+//
+//	in that case we are using the varible $left line 35 at this time
+// 	from the generated file _sprite.scss
+//
 
 .left-image-sprite {
   @include sprite($left);

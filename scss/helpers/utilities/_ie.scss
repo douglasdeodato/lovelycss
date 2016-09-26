@@ -1,10 +1,10 @@
-/*********************************************************************
-*
-* 	Author: @douglasdeodato
-* 	Site: lovelycss.com
-* 	Date : 04/05/2016
-*   Version: bower.json or package.json   
-*********************************************************************/
+//*********************************************************************
+//
+//	 Author: @douglasdeodato
+//	 Site: lovelycss.com
+//	 Date : 04/05/2016
+//   Version: bower.json or package.json
+// *********************************************************************
 
 
 
@@ -21,7 +21,7 @@ $ie8: false;
 
 .class {
 	@if $ie7 == true or $ie8 == true {
-		do this 
+		do this
 		}
 }
 
