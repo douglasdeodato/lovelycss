@@ -16,7 +16,8 @@
 					 spriteDestImg	 : 'public/images/sprite/spritesheet.png',
 					 spriteSrc		 : 'public/images/min/*.{png,jpg,gif}',
 					 imageminCwd	 : 'public/images/',
-					 imageminDest    : 'public/images/min'  
+					 imageminDest    : 'public/images/min',
+					 serverPort: 8000
 				};
 
 				//Concat ===============================
@@ -69,10 +70,10 @@
 
 					//distribution
 						sass.dist = {
-							options: { 
+							options: {
 								style: "compressed",
-								noCache: true, 
-						        sourcemap: 'none', 
+								noCache: true,
+						        sourcemap: 'none',
 						        update:true
 							}
 							, files: {
@@ -82,8 +83,8 @@
 
 					//development env.
 						sass.dev = {
-							options: { 
-								style: "expanded", 
+							options: {
+								style: "expanded",
 								lineNumber: true,
 							}
 							, files: {
@@ -106,7 +107,7 @@
 					            'scss/helpers/**/*.scss', 'scss/modules/**/*.scss',
 					            'scss/pages/**/*.scss', 'scss/vendor/**/*.scss'
 					          ]
-					        }  
+					        }
 					  	};
 
 
@@ -119,42 +120,42 @@
 						        optimizationLevel: 5,
 						        progressive: true,
 						      },
-						
+
 					        files: [{
 					            expand: true,
 					            cwd : '<%= src.imageminCwd %>',
 					            src : ['**/*.{png,jpg,gif}'],
 					            dest: '<%= src.imageminDest %>'
 					        }]
-					 };	
+					 };
 
 				//Sprite ===============================
 				var sprite;
 				config.sprite = sprite = {};
-				
+
 				  sprite.dist ={
 				        src    : '<%= src.spriteSrc %>',
 						dest   : '<%= src.spriteDestImg %>',
 						destCss: '<%= src.spriteCssFolder %>'
-				    
-				  };		
 
-				//connect ===============================
-				/*var connect;
-				config.connect = connect = {};
-				 connect: {
-				    main: {
-				      options: {
-				        port: 8000,
-				        hostname: '0.0.0.0'
-				      }
-				    }
-				  };*/
+				  };
+
+	//grunt serve ===============================
+    config.connect = {
+        server: {
+            options: {
+                livereload: true,
+                port: "<%= src.serverPort %>"
+            }
+        }
+    };
+
 
 	//Register custom tasks ===============================
 	grunt.registerTask('default',['dev']);
 	grunt.registerTask('dev', ['concat:dev','sass:dev']);
 	grunt.registerTask('dist',['sprite','imagemin','concat:dev', 'uglify' , 'sass:dist']);
+	grunt.registerTask('serve', ['connect:server', 'watch']);
 	require('time-grunt')(grunt);
 	require('load-grunt-tasks')(grunt, {
     	scope: 'devDependencies'
