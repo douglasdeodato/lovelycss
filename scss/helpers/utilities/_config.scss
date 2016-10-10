@@ -46,3 +46,20 @@ $screen-xs-min: 320px;
 $screen-sm-min: 768px;
 $screen-md-min: 992px;
 $screen-lg-min: 1200px;
+
+// Path to Assets
+
+$path--rel      : "../public/images";
+
+// Screen reader text
+
+.srt {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

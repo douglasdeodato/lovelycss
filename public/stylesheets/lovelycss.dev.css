@@ -5,6 +5,18 @@
 * 	Date : 26/11/2015
 *   Version: bower.json or package.json   
 *********************************************************************/
+/* line 56, ../../scss/helpers/utilities/_config.scss */
+.srt {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 /* ==========================================================================
   Browser support
   ========================================================================== */
@@ -144,6 +156,16 @@ header nav {
 header nav li {
   display: inline;
   margin-left: 15px;
+}
+
+/* line 34, ../../scss/modules/_header.scss */
+.site-logo {
+  background-image: url("../public/images/logo.png");
+  background-repeat: no-repeat;
+  width: 596px;
+  height: 382px;
+  display: inline-block;
+  margin-top: 10px;
 }
 
 /* line 13, ../../scss/modules/_banner.scss */

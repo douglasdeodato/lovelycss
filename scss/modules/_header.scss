@@ -29,3 +29,9 @@ header nav li {
   display: inline;
   margin-left: 15px;
 }
+
+
+.site-logo {
+  @include img-replace("logo.png", 596px, 382px, inline-block);
+  margin-top: 10px;
+}
