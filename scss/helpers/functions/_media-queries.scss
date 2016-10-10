@@ -1,0 +1,31 @@
+
+$media-queries: true;
+
+@mixin bp($point) {
+  @if ($media-queries) {
+
+    $bp-ipad-max: 1024px;
+    $bp-ipad-min: 768px;
+    $bp-iphone6plus-max: 736px;
+    $bp-iphone6plus-min: 414px;
+
+    @if $point == ipad-portrait {
+      @media // iPad (portrait)
+      handheld,
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (max-width: #{$bp-ipad-max})
+                  and (min-width: #{$bp-ipad-min})
+                  and (orientation: portrait) {
+        @content;
+      }
+    }
+    @if $point == iphone6 {
+      @media // iPhone6
+      handheld,
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (max-width: #{$bp-iphone6plus-min}) {
+        @content;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+%headline-primary {
+  @include rem-size(60px);
+  color: palette(grey, light);
+  font-weight: $font-weight--book;
+  line-height: $line-height-base;
+  margin-top: 0;
+}
+
+%headline-secondary {
+  @include rem-size(24px);
+  color: $grey;
+  font-weight: $font-weight--extra-light;
+}
+
+%headline-third {
+  @include rem-size(20px);
+  color: $white;
+}

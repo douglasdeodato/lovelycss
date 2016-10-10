@@ -1,0 +1,27 @@
+.headline {
+  &-primary {
+    @extend %headline-primary;
+    @include m(grouped) {
+      @extend %headline-primary;
+      margin-bottom: 0;
+    }
+    @include m(navbar) {
+      @include rem-size(16px);
+      color: $white;
+      font-weight: $font-weight--bold;
+      margin-top: 12px;
+      margin-left: 15px;
+    }
+  }
+  &-session {
+    @extend %headline-secondary;
+  }
+  &-login {
+    @extend %headline-third;
+    @include m(title) {
+      @include rem-size(14px);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+  }
+}
