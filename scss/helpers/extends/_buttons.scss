@@ -1,0 +1,27 @@
+//buttons
+
+%btn {
+  padding: 15px 30px;
+  border: 0;
+  color: $white;
+  text-transform: uppercase;
+  display: block;
+  &:hover {
+    opacity: .75;
+  }
+  &:active {
+    opacity: initial;
+  }
+}
+
+%button-login {
+    box-shadow: -4px 4px 0 -2px palette(black);
+    border-radius: 0;
+    background: $white;
+    color: palette(black);
+    padding: 5px 15px 6px 15px;
+    border: 1px solid palette(black);
+    font-weight: $font-weight-bold;
+    position: relative;
+    min-width: 85px;
+}

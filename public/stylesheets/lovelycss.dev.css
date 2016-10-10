@@ -40,6 +40,36 @@
 }
 }
 */
+/* line 3, ../../scss/helpers/extends/_buttons.scss */
+[class^="btn-"] {
+  padding: 15px 30px;
+  border: 0;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+}
+/* line 9, ../../scss/helpers/extends/_buttons.scss */
+[class^="btn-"]:hover {
+  opacity: .75;
+}
+/* line 12, ../../scss/helpers/extends/_buttons.scss */
+[class^="btn-"]:active {
+  opacity: initial;
+}
+
+/* line 17, ../../scss/helpers/extends/_buttons.scss */
+.button-login {
+  box-shadow: -4px 4px 0 -2px palette(black);
+  border-radius: 0;
+  background: #fff;
+  color: palette(black);
+  padding: 5px 15px 6px 15px;
+  border: 1px solid palette(black);
+  font-weight: 700;
+  position: relative;
+  min-width: 85px;
+}
+
 /* line 6, ../../scss/helpers/_clearfix.scss */
 .group {
   zoom: 1;
@@ -53,6 +83,23 @@
   font-size: 0;
   height: 0;
   visibility: hidden;
+}
+
+/* line 39, ../../scss/helpers/mixins/_general.scss */
+.btn-sidebar-close {
+  background-color: #fff;
+}
+/* line 39, ../../scss/helpers/mixins/_general.scss */
+.btn-lovelycss-default {
+  background-color: #0b0b0b;
+}
+
+/* line 21, ../../scss/helpers/_buttons.scss */
+.button-login:hover {
+  color: palette(black);
+  box-shadow: none;
+  left: -2px;
+  bottom: -2px;
 }
 
 /*

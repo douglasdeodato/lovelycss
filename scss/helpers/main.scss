@@ -4,12 +4,16 @@
 //  Author: @douglasdeodato
 //  Site: lovelycss.com
 //  Date : 26/11/2015
-//  Version: bower.json or package.json
+//  Version: package.json
 // *********************************************************************
 
 @import "utilities/main";
+@import "extends/main";
+
 @import "mixins/main";
 @import "clearfix";
 @import "buttons";
 @import "sprite";
 @import "functions/main";
+//@import "no-spacing";
+//@import "_equal-height-columns";

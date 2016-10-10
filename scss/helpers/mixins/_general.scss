@@ -1,0 +1,43 @@
+
+@mixin rounded($amount) {
+  -moz-border-radius: $amount;
+  -webkit-border-radius: $amount;
+  border-radius: $amount;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-top-left-radius: $radius;
+  -webkit-border-top-right-radius: $radius;
+  -moz-border-radius-topleft: $radius;
+  -moz-border-radius-topright: $radius;
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+}
+
+
+// Variables for Mixins
+
+$shadows : (4px 3px 26px -15px rgba(0, 0, 0, .75));
+
+
+@mixin box-shadow-new($params) {
+  -webkit-box-shadow: $params;
+  -moz-box-shadow: $params;
+  box-shadow: $params;
+}
+
+@mixin transition($params) {
+  -webkit-transition: $params;
+  -moz-transition: $params;
+  -o-transition: $params;
+  transition: $params;
+}
+
+// Generate modifier color classes
+@mixin bg-colors($map) {
+  @each $theme, $color in $map {
+    &-#{$theme} {
+      background-color: $color;
+    }
+  }
+}

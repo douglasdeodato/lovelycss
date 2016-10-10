@@ -63,3 +63,10 @@ $path--rel      : "../public/images";
     position: absolute;
     width: 1px;
 }
+
+// UI Colors
+
+$ui-colors: (
+    sidebar-close : $white,
+    lovelycss-default: $black
+);

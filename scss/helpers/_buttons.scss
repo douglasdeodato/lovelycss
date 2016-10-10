@@ -7,4 +7,22 @@
 //   Version: bower.json or package.json
 // *********************************************************************
 
-@mixin button_upload {}
+.btn {
+  @include bg-colors($ui-colors);
+}
+
+[class^="btn-"] {
+  @extend %btn;
+}
+
+.button {
+  &-login {
+    @extend %button-login;
+     &:hover {
+        color: palette(black);
+        box-shadow: none;
+        left: -2px;
+        bottom: -2px;
+    }
+  }
+}
