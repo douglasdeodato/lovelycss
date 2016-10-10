@@ -12,5 +12,10 @@
 }
 
 @function palette($palette, $shade: 'base') {
-	@return map-get(map-get($color-palettes, $palette), $shade);
+  $palette-map: map-get($color-palettes, $palette);
+  @if $palette-map == null {
+    @error "#{$palette} is not a valid palette name.";
+  }
+
+  @return map-get($palette-map, $shade);
 }
