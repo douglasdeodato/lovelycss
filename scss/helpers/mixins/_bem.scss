@@ -1,0 +1,23 @@
+//  *********************************************************************
+//  =Mixin for BEM selectors
+//
+//  *********************************************************************/
+
+// BEM selectors
+
+@mixin e($element) {
+    &__#{$element} {
+    @content;
+  }
+}
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+@mixin c($class) {
+  &.#{$class} {
+    @content;
+  }
+}

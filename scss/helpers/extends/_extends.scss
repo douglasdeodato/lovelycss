@@ -1,0 +1,40 @@
+// Footer
+%a-item-footer {
+  display: block;
+  padding: 15px;
+  color: palette(black);
+  transition: all 0.1s ease-out;
+  background: $black;
+  text-decoration: none;
+}
+
+%a-item-footer-active {
+  color: palette(black);
+  background-color: $white;
+}
+
+
+%li-lovelycss-sidebar {
+    background-color: palette(black);
+    margin: 0 0 10px 0;
+    font-weight: $font-weight-bold;
+
+    padding: 5px;
+    height: 60px;
+
+  span {
+      font-weight: $font-weight--normal;
+      color: palette(black);
+      font-size: $font-size-small;
+      display: block;
+    }
+    @include c(current) {
+      background-color: palette(black);
+      i {
+        visibility: visible;
+      }
+      span {
+       color: $white;
+      }
+    }
+}

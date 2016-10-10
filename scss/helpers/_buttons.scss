@@ -26,3 +26,22 @@
     }
   }
 }
+
+
+
+
+.deodato {
+    @include c(current) {
+      background-color: palette(black);
+      i {
+        visibility: visible;
+      }
+      span {
+       color: $white;
+      }
+    }
+}
+// test above using BEM prints
+// .deodato.current {
+//   background-color: palette(black);
+// }

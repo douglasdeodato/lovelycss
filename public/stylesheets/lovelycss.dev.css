@@ -102,6 +102,19 @@
   bottom: -2px;
 }
 
+/* line 20, ../../scss/helpers/mixins/_bem.scss */
+.deodato.current {
+  background-color: palette(black);
+}
+/* line 36, ../../scss/helpers/_buttons.scss */
+.deodato.current i {
+  visibility: visible;
+}
+/* line 39, ../../scss/helpers/_buttons.scss */
+.deodato.current span {
+  color: #fff;
+}
+
 /*
 SCSS variables are information about icon's compiled state, stored under its original file name
 
