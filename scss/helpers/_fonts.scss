@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+// Default Variables
+
+$lovelycss-font-path: "../fonts" !default;
+
+
+@font-face {
+  font-family: 'opensans';
+  src: url('#{$lovelycss-font-path}/Open_Sans/opensans-italic-webfont.eot');
+  src: url('#{$lovelycss-font-path}/Open_Sans/opensans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('#{$lovelycss-font-path}/Open_Sans/opensans-italic-webfont.woff') format('woff'),
+    url('#{$lovelycss-font-path}/Open_Sans/opensans-italic-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+// test
+.font-test-class {
+    font-family: $font-family-blog ;
+}

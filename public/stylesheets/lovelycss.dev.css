@@ -5,7 +5,7 @@
 * 	Date : 26/11/2015
 *   Version: bower.json or package.json   
 *********************************************************************/
-/* line 56, ../../scss/helpers/utilities/_config.scss */
+/* line 57, ../../scss/helpers/utilities/_config.scss */
 .srt {
   border: 0;
   clip: rect(0 0 0 0);
@@ -145,6 +145,18 @@ The `sprites` mixin generates identical output to the CSS template
 
 @include sprites($spritesheet-sprites);
 */
+@font-face {
+  font-family: 'opensans';
+  src: url("../fonts/Open_Sans/opensans-italic-webfont.eot");
+  src: url("../fonts/Open_Sans/opensans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Open_Sans/opensans-italic-webfont.woff") format("woff"), url("../fonts/Open_Sans/opensans-italic-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 21, ../../scss/helpers/_fonts.scss */
+.font-test-class {
+  font-family: opensans, Arial, sans-serif;
+}
+
 /* line 18, ../../scss/core/_base.scss */
 html,
 body {
