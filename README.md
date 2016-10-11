@@ -16,7 +16,7 @@ You are thinking, oh no... not another framework, methodology or structure.  Wel
 Download Now http://lovelycss.com
 
 
-## Summary 
+## Summary
 
 - [About](#about)
 - [Why Use?](#whyuse)
@@ -59,17 +59,13 @@ grunt http://gruntjs.com/
 
 node https://nodejs.org/en/
 
-bower http://bower.io/
-
 
 ## Installing
 Before you install lovelycss check if you have all dependencies above, once you have run:
 
-bower install
-
 npm install
 
-now you have a fresh and complete web project to start from scratch 
+now you have a fresh and complete web project to start from scratch
 
 ## Grunt
 we decided use grunt for organize and help us in repetitive tasks like minification, compilation, unit testing, linting, etc.

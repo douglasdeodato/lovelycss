@@ -18,7 +18,7 @@ https://git-scm.com/downloads
 If you are using Mac OS or Linux, just use Terminal
 
 
-## Step 2 : Installing Dependencies 
+## Step 2 : Installing Dependencies
 
 After install git-bash  you need install the Dependencies bellow:
 
@@ -31,8 +31,6 @@ grunt http://gruntjs.com/
 
 node https://nodejs.org/en/
 
-bower http://bower.io/
-
 
 Now you have all dependecies to run a modern and great web system from scratch .
 
@@ -42,16 +40,15 @@ Now you have all dependecies to run a modern and great web system from scratch .
 ## Installing lovely-css
 Before you install lovelycss check if you have all dependencies above, enter in the folder lovelycss and run that commands bellow:
 
-**bower install**
 
 **npm install**
 
-that is it now you have a fresh and complete web project to start from scratch 
+that is it now you have a fresh and complete web project to start from scratch
 
 
 ## All your scss files will be in : sass folder
 
-we are using sass for better performance and organization of css , you don't need to worry about compile this , you can just use a simple command to compress your sass files in a just css file:  
+we are using sass for better performance and organization of css , you don't need to worry about compile this , you can just use a simple command to compress your sass files in a just css file:
 
 that is the command:
 
@@ -72,7 +69,6 @@ we have 2 css files compiled by grunt sass:
 lovelycss.dev.css  for development so you can see the line and the name of file for debug.
 
 lovelycss.dist.css  for distribution when you finish your App.
-
 
 
 
